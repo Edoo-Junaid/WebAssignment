@@ -13,11 +13,11 @@ if($item['ID']==$ID):
 <!-------------------single product details----------------->
 <div class="small-container1  single-product">
     <div class="row2">
-        <div class="column5"><img src="<?php echo $item['pictures'];?>"width="100%" id="man1"></div>
+        <div class="column5"><img src="<?php echo $item['pictures'];?>" width="90%" id="man1"></div>
         
         <div class="column6"><p style="font-weight: bold;"> shirt</p>
         <h1 style="text-align: left;">shirt</h1>
-        <h4 style="font-weight: bold;">$item['Title']</h4>
+        <h4 style="font-weight: bold;"> <?php echo $item['Title']; ?></h4>
         <form>
         <select>
             <option>Select Size</option>
@@ -37,7 +37,7 @@ if($item['ID']==$ID):
         </div>
     </div>
            <div><h3>Product Details</h3>
-            <p>$item[Title]</p>
+            <p> <?php echo $item['Title'] ?></p>
             <img src="Products/Clothing/manFashion/man1/size_table.png" width="600px" height="500px">
          </div>
 </div>

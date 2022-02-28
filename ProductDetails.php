@@ -15,8 +15,8 @@ if($item['ID']==$ID):
     <div class="row2">
         <div class="column5"><img src="<?php echo $item['pictures'];?>" width="90%" id="man1"></div>
         
-        <div class="column6"><p style="font-weight: bold;"> shirt</p>
-        <h1 style="text-align: left;">shirt</h1>
+        <div class="column6"><p style="font-weight: bold;">Item</p>
+        <h1 style="text-align: left;"><?php echo $item['category'];?></h1>
         <h4 style="font-weight: bold;"> <?php echo $item['Title']; ?></h4>
         <form>
         <select>
@@ -28,18 +28,19 @@ if($item['ID']==$ID):
             <option>Small</option>
            
         </select>
-        <br><br>
-        <label for="Quantity">Quantity:</label><br><br>
-        <input type="text" value="1" name="Quantity"><br>
         <br>
-         <div class="btn"><input type="submit" value="Add to cart"></div>
+        <label for="Quantity"><h4>Quantity:</h4></label><br>
+        <div><input type="text" value="1" name="Quantity"></div>
+        <div class="type2"><input type="submit" value="Add to cart"></div>
        </form>
         </div>
+      
     </div>
-           <div><h3>Product Details</h3>
-            <p> <?php echo $item['Title'] ?></p>
-            <img src="Products/Clothing/manFashion/man1/size_table.png" width="600px" height="500px">
-         </div>
+    <br><br>
+           <div>
+               <h3>Product Details</h3>
+               <h3><?php echo $item['Item_Details'] ?></h3>
+            </div>
 </div>
 </body>
 </html>

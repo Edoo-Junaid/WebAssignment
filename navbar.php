@@ -17,8 +17,8 @@
 
     <nav>
       <ul class="nav_links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Products</a></li>
+        <li><a href="main.php">Home</a></li>
+        <li><a href="AllProductPage.php">Products</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Content</a></li>
         <li><a href="">Account</a></li>

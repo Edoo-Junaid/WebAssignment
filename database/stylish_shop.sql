@@ -1,0 +1,27 @@
+
+
+insert into products(ID,pictures,Title,price,star)VALUES
+    (1,'Products/Clothing/manFashion/man1/m3.png', 'Formal Slim Men Shirt Long sleeve',279.99,'&#9733 &#9733 &#9733 &#9733  &#x2606'),
+    (2,'Products/Clothing/manFashion/man2/7m.png','Formal Man Cotton Trousers',355,'&#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (3,'Products/Clothing/manFashion/man3/p1.png','Men Brand Short Slim Fit Sleeve Summer PoloShirt',350.00,'&#9733 &#9733 &#9733  &#x2606 &#x2606'),
+    (4,'Products/Clothing/womanFashion/woman1/dw.webp','Vintage Floral Party Square Neck Hort Sleeve Elegant Dress',687.49,'&#9733 &#9733 &#9733 &#9733 &#9733'),
+    (5,'Products/Clothing/womanFashion/woman2/1w.png','Chinese Traditional Vintage Women Hanfu Midi Qipao ',1250.00 ,'&#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (6,'Products/Clothing/womanFashion/woman3/wd6.png','Woman Casual Long Sleeve Autumn Winter Pullover Dress',400.00,'&#9733 &#9733 &#9733 &#x2606 &#x2606  '),
+    (7,'Products/Shoes/shoes2/sw2.png',' Newly Men''s Quality Patent Leather Leather Soft Wedding Shoes',370,'&#9733 &#9733 &#9733 &#9733 &#9733'),
+    (8,'Products/Shoes/shoes1/shh1.png','ONEMIX New Style Men Running Mesh Athletic Outdoor Leather Jogging Trekking Shoes',1589.00,' &#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (9,'Products/shoes/shoes3/c6.png','Casual shoes slip on Genuine Leather Moccasins Sneakers',600.75,'&#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (10,'Products/Shoes/shoes5/ad3.png','adidas Originals Forum Mid trainers',3400.00,'&#9733 &#9733 &#9733 &#9733 &#x2606    '),
+    (11,'Products/Shoes/shoes6/he4.png','Women Pumps Pointed Toe High Heel Female  Shoes',490.00,'&#9733 &#9733 &#9733 &#9733 &#x2606  '),
+    (12,'Products/shoes/shoes4/woman2.png','Summer resistant Sandals  Handmade Make Walking Footwear',400.00,'&#9733 &#9733 &#9733 &#x2606 &#x2606 '),
+    (13,'Products/Watches/watch1/wat1.png','Sport Wristwatch 30M Waterproof Quartz Leather RelogioMasculino LIGE Brand Men Sport Watch',500.00,'&#9733 &#9733 &#9733 &#x2606  &#x2606'),
+    (14,'Products/Watches/watch2/LIGE.png','Watches Bluetooth call Digital LED Electronic Wristwatche Waterproof Swimming Activity LIGE Brand Men Sport',1200.00,'&#9733 &#9733 &#9733 &#9733 &#9733 '),
+    (15,'Products/Watches/watch3/wp7.png','Wristwatch Fashion Waterproof Chronograph Clock Luminous Luxury Business Watch ',1700.00,'&#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (16,'Products/Watches/watch4/lw1.png','Luxury Brand Diamond RelogioFeminino Rhinestone Women''s Bracelet Watch',200.00,'&#9733 &#9733 &#9733 &#9733 &#x2606 '),
+    (17,'Products/Watches/watch5/b1.png','BeaQueen Sterling Cute Crystal Jewelry Big Flower Cluster Colorful CZ Stone Bracelet for Women',152.00,'&#9733 &#9733 &#9733 &#9733 &#x2606  '),
+    (18,'Products/Watches/watch6/n2.png','Creative Gold Color Necklace + 1 Pair Earrings Wedding Bridal Pearl Jewelry',85.00,'&#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (19,'Products/PhonesTelecommunications/phone1/ph3.png','Samsung Galaxy 64GB 4GB RAM A40  Android phone ',3000,' &#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (20,'Products/PhonesTelecommunications/phone case/pc1.png','Leather Flip Phone Case For Samsung Galaxy A50 A40 A30 A20',250.00,'&#9733 &#9733 &#9733 &#9733 &#9733  '),
+    (21,'Products/PhonesTelecommunications/pcfan/pf1.webp','Laptop Cooling Pad Six Fans Two USB Adjustable Stand',1025.00,'&#9733 &#9733 &#9733 &#x2606 &#x2606 '),
+    (22,'Products/head1.webp','Wired Earphone with Microphone',85.00,'&#9733 &#9733 &#9733 &#9733 &#x2606'),
+    (23,'Products/PhonesTelecommunications/tablet/t4.png','Huawei Y9 Prime Dual SIM 6GB/128GB ROM Android Mobile Phone ',9000.00,'&#9733 &#9733 &#9733 &#9733 &#x2606  '),
+    (24,'Products/PhonesTelecommunications/screen protectore/sp1.png','999D Tempered Glass For Samsung Galaxy A50 A40 A30 A20 A10',39.50,'&#9733 &#9733 &#9733 &#9733 &#x2606 ');

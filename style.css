@@ -83,7 +83,7 @@ align-items: center;
 }
 .button1 {
   display: inline-block;
-  background-color: #180000;
+  background-color: #59ab6e;
   padding: 8px 30px;
   margin: 30px;
   border-radius: 30px;
@@ -91,7 +91,7 @@ align-items: center;
   left: 200px;
 }
 .button1 a {
-  color: rgb(66, 35, 35);
+  color: white;
   text-decoration: none;
 }
 .cart img {
@@ -100,7 +100,7 @@ align-items: center;
   left: 500px;
 }
 .button1:hover {
-  background: #f8f8f8;
+  background: #563434;
 }
 /*---------------Special offer part*-----------------------------------------------------------*/
 /*---------------Special offer part*-----------------------------------------------------------*/
@@ -192,7 +192,7 @@ align-items: center;
 }
 
 .row-container {
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -207,7 +207,7 @@ align-items: center;
   justify-content: space-evenly;
 }
 .column3 {
-  flex-basis: 30%;
+  flex-basis: 20%;
   min-width: 250px;
   margin-bottom: 30px;
   transition: transform 0.5s;
@@ -217,7 +217,7 @@ align-items: center;
 }
 .column3 img {
   width: 100%;
-  height: 300px;
+  height: 270px;
 }
 
 h1 {
@@ -233,7 +233,7 @@ h1 {
 }
 .title::after {
   content: "";
-  background: #160c24;
+  background: #59ab6e;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -251,7 +251,7 @@ column3 p {
   font-size: 15px;
 }
 .star {
-  color: #cfcfcf;
+  color: #ff523b;
   /*Single product details----------------------------------------------*/
 }
 
@@ -270,7 +270,7 @@ column3 p {
   flex-basis: 50%;
   min-width: 300px;
   position: relative;
-  bottom: 10px;
+  bottom: 160px;
 }
 .row2 h1 {
   font-size: 35px;
@@ -313,7 +313,7 @@ column3 p {
 }
 
 .single-product input {
-  width: 100px;
+  width: 50px;
   height: 40px;
   padding-left: 10px;
   font-size: 20px;

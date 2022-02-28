@@ -14,11 +14,9 @@ include("navbar.php");
 
     <div class="row">
       <div class="column2">
-        <p class="title">welcomeeee</p>
+        <p class="title">welcome</p>
         <h1>Explore & Discover Our Collections !</h1>
-        <div class="button1">
-          <a href="">Explore Now &#8594</a>
-        </div>
+        <div class="button1"> <a href="">Explore Now &#8594</a></div>
       </div>
       <div class="column2"><img src="Images/aquarium-centre-commercial-dubai.webp"> </div>
     </div>
@@ -107,10 +105,11 @@ include("navbar.php");
 
   </div>
 
-  <?php
-
+  <?php 
+  
   include("Footer.php");
   ?>
+
 
 </body>
 

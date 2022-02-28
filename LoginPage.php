@@ -13,8 +13,6 @@ include("Connection.php")
     <title>AsosStore</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
     <link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
@@ -52,14 +50,12 @@ include("Connection.php")
 
 
     <?php
-
     include("Footer.php");
-
     ?>
+
     <!--------------js for toggle form ------->
     <script>
         var LoginForm = document.getElementById("LoginForm");
-
         var RegForm = document.getElementById("RegistrationForm");
         var Indicator = document.getElementById("Indicator");
 
@@ -76,6 +72,7 @@ include("Connection.php")
             Indicator.style.transform = "translateX(0px)"
         }
     </script>
+
 </body>
 
 </html>

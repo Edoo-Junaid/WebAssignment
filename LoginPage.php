@@ -1,6 +1,6 @@
 <?php
 
-    include("Connection.php")
+include("Connection.php")
 
 ?>
 
@@ -21,27 +21,9 @@
 
 <body>
     <!-- Navigation -->
-    <header>
-        <h2> STYLISH BOUTIQUE</h2>
-
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Content</a></li>
-                <li><a href="">Account</a></li>
-
-            </ul>
-        </nav>
-        <div class="Icons">
-            <img class="cart" src="images/cart.png" alt="logo">
-            <img class="user_Icon" src="images/userIcon.png">
-            <a href="#" class="login_button">Login</a>
-        </div>
-
-    </header>
-
+    <?php
+    include("Navbar.php");
+    ?>
     <div class="account-page">
 
         <div class="form-container">
@@ -57,7 +39,7 @@
                 <button type="submit" class="btn" name="login_button">Login</button>
                 <a href="#">Forgot password</a>
             </form>
-            <form id="RegistrationForm" method = "post" action="Process.php">
+            <form id="RegistrationForm" method="post" action="Process.php">
                 <input class="input " type="text" placeholder=" Username" name="username" />
 
                 <input class="input " type="email" placeholder="Email" name="email" />
@@ -67,45 +49,13 @@
             </form>
         </div>
     </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row1">
-                <div class="footer-col1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="Images/play-store.png">
-                        <img src="Images/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col2">
-                    <img src="Images/logo2.jpg">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Shopping Accessible to the Many.
-                    </p>
-                </div>
-                <div class="footer-col3">
-                    <h3> Contact Us</h3>
-                    <ul>
-                        <li>+230 57272928</li>
-                        <li>stylishboutique@gmail.com</li>
 
-                    </ul>
-                </div>
-                <div class="footer-col4">
-                    <h3> Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
 
-    </div>
+    <?php
+
+    include("Footer.php");
+
+    ?>
     <!--------------js for toggle form ------->
     <script>
         var LoginForm = document.getElementById("LoginForm");

@@ -28,7 +28,7 @@
     <div class="Icons">
       <img class="cart" src="images/cart.png" alt="logo">
       <img class="user_Icon" src="images/userIcon.png">
-      <a href="#" class="login_button">Login</a>
+      <a href="LoginPage.php" class="login_button">Login</a>
     </div>
 
   </header>

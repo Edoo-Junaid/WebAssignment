@@ -91,7 +91,7 @@ align-items: center;
   left: 200px;
 }
 .button1 a {
-  color: white;
+  color: rgb(66, 35, 35);
   text-decoration: none;
 }
 .cart img {
@@ -100,7 +100,7 @@ align-items: center;
   left: 500px;
 }
 .button1:hover {
-  background: #563434;
+  background: #34ac34;
 }
 /*---------------Special offer part*-----------------------------------------------------------*/
 /*---------------Special offer part*-----------------------------------------------------------*/

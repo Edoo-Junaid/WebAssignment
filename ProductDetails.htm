@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Products Details</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h2> STYLISH BOUTIQUE</h2>
+    
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="">Account</a></li>
+    
+            </ul>
+        </nav>
+        <div class="Icons">  
+          <img class="cart" src="images/cart.png" alt="logo">
+          <img class="user_Icon" src ="images/userIcon.png" >
+           <a href="#" class="login_button">Login</a>
+        </div>
+      
+    </header>
+
+
+    <!-------------------single product details----------------->
+    <div class="small-container1  single-product">
+        <div class="row2">
+            <div class="column5"><img src="Products/Clothing/manFashion/man1/m3.png" width="100%" id="man1">
+                <div class="small-img-row">
+                    <div class=small-img-col>
+                        <img src="Products/Clothing/manFashion/man1/m1.png" width="60%" class="small-img">
+                    </div>
+                    <div class=small-img-col>
+                        <img src="Products/Clothing/manFashion/man1/m2.png" width="60%" class="small-img">
+                    </div>
+                    <div class=small-img-col>
+                        <img src="Products/Clothing/manFashion/man1/m4.png" width="60%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="column6">
+                <p style="font-weight: bold;"> shirt</p>
+                <h1 style="text-align: left;">Formal Slim Men Shirt Long sleeve</h1>
+                <h4 style="font-weight: bold;">MUR 699.75</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+                <h3>Product Details</h3>
+                <p>Bamboo Fiber Men Shirt Long Sleeve Luxury Solid Stretch Comfort Soft Square Collar Brand Formal Slim
+                    Fit Non Iron Smooth Camisa</p>
+                <img src="Products/Clothing/manFashion/man1/size_table.png" width="600px" height="500px">
+            </div>
+        </div>
+    </div>
+
+    <!----------------js for only one product --------------->
+    <script>
+        var ProductImg = document.getElementById("man1");
+        var smallImg = document.getElementByClassName("small-img");
+        smallImg[0].onclick = function () {
+            ProductImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            ProductImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            ProductImg.src = smallImg[2].src;
+        }
+    </script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ class DBController
 
     protected $user='root';
     protected $password='';
-    protected $database='stylishboutique';
+    protected $database='ecommerce';
 
 
     //connecion property

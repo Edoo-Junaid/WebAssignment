@@ -29,22 +29,26 @@ if (isset($_POST["login_button"])) {
             $user_data = mysqli_fetch_assoc($result);
             if ($user_data['password'] = $password) {
                 $_SESSION['username'] = $username;
+
                 $_SESSION['userID'] = $user_data['user_id'];
                 header("Location:main.php");
                 die;
             }
         } 
-        
+
     }
     echo "Wrong username of password";
 }
 
 if (isset($_POST["AddToCart"])) {
     session_start();
-  $quantity = $_POST["Quantity"];
-  $size = $_POST["size"];
-    $username = $_SESSION['username'];
+    $quantity = $_POST["Quantity"];
+    $size = $_POST["size"];
+    $userID= $_SESSION['userID'];
+    settype($userID,"integer");
     $productID = $_SESSION['productID'];
-
+    settype($productID,"integer");
+    $query= "INSERT INTO cart(product_id,user_id,size,quantity) values($productID,$userID,'$size',$quantity)";
+    mysqli_query($connection,$query);
     echo $size;
 }

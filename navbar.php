@@ -33,16 +33,17 @@ if (session_status() == PHP_SESSION_NONE) {
       </ul>
     </nav>
     <div class="Icons">
-      <img class="cart" src="images/cart.png" alt="logo">
+      <a href="cart.php"><img class="cart" src="images/cart.png" alt="logo"></a>
       <img class="user_Icon" src="images/userIcon.png">
 
 
       <?php
-      if(isset($_SESSION['username'])){
+      if (isset($_SESSION['username'])) {
         $user = $_SESSION['username'];
         echo "<a href='LoginPage.php'>$user</a>";
-      }else{
-        echo "<a href='LoginPage.php'>Login</a>";}        
+      } else {
+        echo "<a href='LoginPage.php'>Login</a>";
+      }
       ?>
     </div>
 

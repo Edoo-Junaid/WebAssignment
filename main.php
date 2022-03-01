@@ -49,7 +49,6 @@ include("navbar.php");
           <p> MUR 490.00 </p>
           <p class="star">&#9733 &#9733 &#9733 &#9733 &#x2606 </p>
         </div>
-
       </div>
     </div>
   </div>
@@ -105,8 +104,8 @@ include("navbar.php");
 
   </div>
 
-  <?php 
-  
+  <?php
+
   include("Footer.php");
   ?>
 

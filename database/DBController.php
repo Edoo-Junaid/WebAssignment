@@ -5,9 +5,11 @@ class DBController
     //Database connection
 
     protected $host= 'localhost';
-    protected $user='yahya';
-    protected $password='1234';
-    protected $database='ecommerce';
+
+    protected $user='root';
+    protected $password='';
+    protected $database='stylishboutique';
+
 
     //connecion property
     public $con=null;
@@ -18,9 +20,9 @@ class DBController
     {
         $this->con=mysqli_connect($this->host,$this->user,$this->password,$this->database);
         if($this->con->connect_error){
+
             echo"Fail" .this->con->connect_error;
         }
-        echo 'connection successful..!';
     }
 
     public function destruct(){

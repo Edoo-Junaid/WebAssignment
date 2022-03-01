@@ -12,7 +12,9 @@ include("navbar.php");
 
 <div class="products">
     <div class="row-container">
+
           <h1 class="title">OUR PRODUCTS</h1>
+   
               <h1></h1>
             <div class="row1">
             <?php foreach ($product_shuffle as $item) {?>

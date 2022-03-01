@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 //include navbar
 include("navbar.php");
 ?>
@@ -29,6 +30,7 @@ if($item['ID']==$ID):
            
         </select>
         <br>
+
         <label for="Quantity"><h4>Quantity:</h4></label><br>
         <div><input type="text" value="1" name="Quantity"></div>
         <div class="type2"><input type="submit" value="Add to cart"></div>

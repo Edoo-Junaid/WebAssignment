@@ -83,7 +83,7 @@ align-items: center;
 }
 .button1 {
   display: inline-block;
-  background-color: #ff523b;
+  background-color: #59ab6e;
   padding: 8px 30px;
   margin: 30px;
   border-radius: 30px;
@@ -192,7 +192,7 @@ align-items: center;
 }
 
 .row-container {
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -207,7 +207,7 @@ align-items: center;
   justify-content: space-evenly;
 }
 .column3 {
-  flex-basis: 30%;
+  flex-basis: 20%;
   min-width: 250px;
   margin-bottom: 30px;
   transition: transform 0.5s;
@@ -217,7 +217,7 @@ align-items: center;
 }
 .column3 img {
   width: 100%;
-  height: 300px;
+  height: 270px;
 }
 
 h1 {
@@ -234,7 +234,7 @@ h1 {
 
 .title::after {
   content: "";
-  background: #ff523b;
+  background: #59ab6e;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -315,7 +315,7 @@ column3 p {
 }
 
 .single-product input {
-  width: 100px;
+  width: 50px;
   height: 40px;
   padding-left: 10px;
   font-size: 20px;

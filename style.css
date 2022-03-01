@@ -231,6 +231,7 @@ h1 {
   line-height: 60px;
   color: #555;
 }
+
 .title::after {
   content: "";
   background: #59ab6e;
@@ -270,7 +271,8 @@ column3 p {
   flex-basis: 50%;
   min-width: 300px;
   position: relative;
-  bottom: 160px;
+  bottom: 10px;
+  left:30px
 }
 .row2 h1 {
   font-size: 35px;
@@ -339,7 +341,30 @@ input:focus {
   min-width: 300px;
   flex-direction: column;
   position: relative;
-  left: 30px;
+  left: 60px;
+}
+.type2 input {
+  width:150px;
+  background:#59ab6e;
+  border-radius: 30px;
+}
+.type2 input:hover {
+  width:150px;
+  background-color: #b095d4;
+  
+}
+.additionalDetails h3{
+
+  text-align:center;
+
+}
+h3 {
+text-align: center;
+position:relative;
+left:100px;
+color: #555;
+font-weight:bolder;
+/*font-size:x-large;*/
 }
 
 /*------- Account page-------*/

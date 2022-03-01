@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: radial-gradient(#fff, #ffd6d6);
 }
 
 li,
@@ -453,4 +452,21 @@ form a {
   height: 30px;
   border-radius: 25px;
   padding: 0 30px 0 68px;
+}
+/*******************************cart****************************/
+
+
+.Cart td{
+  padding-top:30px;
+  width: 200px;
+  text-align: center;
+}
+.cartImage {
+  width: 200px;
+}
+
+.Cart table{
+  max-width: 1000px;
+ width: 90%;
+ margin: auto;
 }

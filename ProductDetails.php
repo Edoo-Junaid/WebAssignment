@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 //include navbar
 include("navbar.php");
 ?>
@@ -18,21 +19,23 @@ if($item['ID']==$ID):
         <div class="column6"><p style="font-weight: bold;"> shirt</p>
         <h1 style="text-align: left;">shirt</h1>
         <h4 style="font-weight: bold;"> <?php echo $item['Title']; ?></h4>
-        <form>
-        <select>
+        <form method="post" action="Process.php">
+        <select name="size">
             <option>Select Size</option>
             <option>XXL</option>
             <option>XL</option>
             <option>Large</option>
             <option>Medium</option>
-            <option>Small</option>
-           
+            <option>Small</option>  
         </select>
         <br><br>
         <label for="Quantity">Quantity:</label><br><br>
         <input type="text" value="1" name="Quantity"><br>
         <br>
-         <div class="btn"><input type="submit" value="Add to cart"></div>
+        <?php 
+             $_SESSION['productID']=$ID;
+        ?>
+         <div class="btn"><input type="submit" value="Add to cart" name="AddToCart"></div>
        </form>
         </div>
     </div>

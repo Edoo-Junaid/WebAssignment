@@ -1,3 +1,10 @@
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+?>
+
 <html>
 
 <head>
@@ -28,7 +35,15 @@
     <div class="Icons">
       <img class="cart" src="images/cart.png" alt="logo">
       <img class="user_Icon" src="images/userIcon.png">
-      <a href="LoginPage.php" class="login_button">Login</a>
+
+
+      <?php
+      if(isset($_SESSION['username'])){
+        $user = $_SESSION['username'];
+        echo "<a href='LoginPage.php'>$user</a>";
+      }else{
+        echo "<a href='LoginPage.php'>Login</a>";}        
+      ?>
     </div>
 
   </header>

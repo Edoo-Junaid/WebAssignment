@@ -30,7 +30,6 @@ include("Connection.php")
                 <span onclick="register()"> Register</span>
                 <hr id="Indicator">
             </div>
-
             <form id="LoginForm" method="post" action="Process.php">
                 <input class="input" type="text" placeholder=" Username" name="username" />
                 <input class="input " type="password" placeholder="Password" name="password" />

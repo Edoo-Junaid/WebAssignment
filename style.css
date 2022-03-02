@@ -517,6 +517,9 @@ td {
 .AboutUs{
   margin:50px;
 }
+.map{
+  padding-left: 10%;;
+}
 
 .About-container{
   max-width: 100%;

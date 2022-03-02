@@ -22,6 +22,7 @@ header h2 {
   color: #59ab6e;
 }
 .nav_links li {
+  font: 1em sans-serif;
   color: #111;
   display: inline-block;
   padding: 0 10px;
@@ -505,4 +506,39 @@ td {
 .cartTotalTitle{
 
   text-align: center;
+}
+/************************contact us*****************/
+.contactPage{
+
+  width: 90%;
+}
+.envelopIcon{
+  filter: invert(66%) sepia(29%) saturate(641%) hue-rotate(83deg) brightness(85%) contrast(87%);
+  padding-left:10%;
+  padding-right:10%;
+  padding-top: 10px;
+  width: 400px;
+}
+
+.enveloppe{
+  width:500px;
+}
+.contactUsTitle{
+  font: 1em sans-serif;
+  padding-top: 75px;
+  background-color: #e9eef5;
+  height: 200px;
+  color: rgb(0, 0, 0);
+}
+
+.contactUs{
+  padding-top: 50px;
+  flex: 1;
+  width: 400px;
+}
+
+.contactCenter{
+  margin-left: 15%;
+  margin-right: 15%;
+  display:flex;
 }

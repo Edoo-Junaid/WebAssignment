@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Stylish Boutique</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h2> STYLISH BOUTIQUE</h2>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="main.php">Home</a></li>
+                <li><a href="AllProductPage.php">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="">Account</a></li>
+
+            </ul>
+        </nav>
+        <div class="Icons">
+            <img class="cart" src="images/cart.png" alt="logo">
+            <img class="user_Icon" src="images/userIcon.png">
+        </div>
+    </header>
+    <div class="checkoutPage">
+        <div class="checkoutForm">
+
+            <form method="post" action="process.php">
+                <p>First Name: </p>
+                <input type="text" name="firstName">
+                <p>Last Name</p>
+                <input type="text" name="lastName">
+                <p>Address</p>
+                <input type="text" name="Address" placeholder="Street">
+                <p>Phone number</p>
+                <input type="number" name="phoneNumber">
+                <p>Town</p>
+                <input type="text" name="Town">
+                <p>State</p>
+                <input type="text" name="state">
+                <p>Zip Code</p>
+                <input type="number" name="zip">
+                <p>Comments</p>
+                <input type="text" name="comments">
+
+            </form>
+        </div>
+
+        <div class="card details">
+
+        </div>
+    </div>
+</body>
+
+</html>

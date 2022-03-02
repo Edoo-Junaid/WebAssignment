@@ -22,8 +22,8 @@
               </ul>
           </div>
           <div class="footer-col4">
-             <h3>  Follow Us</h3>
               <ul>
+                 <li> <h3>Follow Us</h3><li>
                   <li>Facebook</li>
                   <li>Twitter<li>
                   <li>Instagram</li>

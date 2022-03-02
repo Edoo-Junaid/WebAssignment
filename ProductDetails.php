@@ -35,13 +35,15 @@ foreach ($product->getData() as $item) :
                         <?php
                         $_SESSION['productID'] = $ID;
                         ?>
-                        <div class="btn"><input type="submit" value="Add to cart" name="AddToCart"></div>
+                        <div class="type2"><input type="submit" value="Add to cart" name="AddToCart"></div>
                     </form>
                 </div>
             </div>
             <div>
                 <h3>Product Details</h3>
-                <h3><?php echo $item['Item_Details'] ?></h3>
+                <?php $pdResult= explode(',',$item['Item_Details']); ?>
+
+                <h3><?php echo $item['Item_Details'];?></h3>
             </div>
         </div>
         </body>
@@ -51,4 +53,5 @@ foreach ($product->getData() as $item) :
 <?php
     endif;
 endforeach;
+
 ?>

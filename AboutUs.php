@@ -2,7 +2,6 @@
 //include navbar
 include("navbar.php");
 ?>
-
 <div class="AboutUs">
     <div class="About-container">
 

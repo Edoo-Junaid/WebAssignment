@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: radial-gradient(#fff, #ffd6d6);
 }
 
 li,
@@ -39,13 +38,13 @@ header h2 {
   cursor: pointer;
   height: 30px;
 }
-.Icons{
- display:flex;
-align-items: center;
+.Icons {
+  display: flex;
+  align-items: center;
 }
-.user_Icon{
-  padding-left :20px;
-  height : 30px;
+.user_Icon {
+  padding-left: 20px;
+  height: 30px;
   padding-right: 10px;
 }
 
@@ -272,7 +271,7 @@ column3 p {
   min-width: 300px;
   position: relative;
   bottom: 10px;
-  left:30px
+  left: 30px;
 }
 .row2 h1 {
   font-size: 35px;
@@ -344,27 +343,24 @@ input:focus {
   left: 60px;
 }
 .type2 input {
-  width:150px;
-  background:#59ab6e;
+  width: 150px;
+  background: #59ab6e;
   border-radius: 30px;
 }
 .type2 input:hover {
-  width:150px;
+  width: 150px;
   background-color: #b095d4;
-  
 }
-.additionalDetails h3{
-
-  text-align:center;
-
+.additionalDetails h3 {
+  text-align: center;
 }
 h3 {
-text-align: center;
-position:relative;
-left:100px;
-color: #555;
-font-weight:bolder;
-/*font-size:x-large;*/
+  text-align: center;
+  position: relative;
+  left: 100px;
+  color: #555;
+  font-weight: bolder;
+  /*font-size:x-large;*/
 }
 
 /*------- Account page-------*/
@@ -374,7 +370,6 @@ font-weight:bolder;
   align-items: center;
 }
 .form-container {
-  
   box-shadow: 2px 2px 18px #257e1a;
   width: 300px;
   height: 400px;
@@ -453,4 +448,61 @@ form a {
   height: 30px;
   border-radius: 25px;
   padding: 0 30px 0 68px;
+}
+/*******************************cart****************************/
+
+.cartPage {
+  display: flex;
+  width:95%;
+  margin: auto;
+}
+
+.cartTotal {
+  padding-top: 10%;
+  border-left: 1px solid #ddd;
+  padding-left: 10px;
+  width: 400px;
+}
+
+.cartTotal table{
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
+}
+.Cart th,
+td {
+  padding-top: 15px;
+  width: 200px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+.cartImage {
+  width: 200px;
+}
+
+.Cart table {
+ 
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
+}
+
+.cartTitle {
+ text-align: center;
+}
+
+.chechoutbtn{
+  color: rgb(255, 255, 255);
+  padding-top: 15px;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 50px;
+  background-color:#59ab6e;
+  border-radius: 10px;
+}
+.cartTotalTitle{
+
+  text-align: center;
 }

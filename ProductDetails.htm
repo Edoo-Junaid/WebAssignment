@@ -3,6 +3,7 @@
 <head>
     <title>Products Details</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 
 <body>
@@ -32,16 +33,16 @@
     <!-------------------single product details----------------->
     <div class="small-container1  single-product">
         <div class="row2">
-            <div class="column5"><img src="Products/Clothing/manFashion/man1/m3.png" width="100%" id="man1">
+            <div class="column5"><img src="Products/Clothing/manFashion/man1/m3.png" width="100%" id="ImageDisplayed">
                 <div class="small-img-row">
                     <div class=small-img-col>
-                        <img src="Products/Clothing/manFashion/man1/m1.png" width="60%" class="small-img">
+                        <img src="Products/Clothing/manFashion/man1/m1.png" width="60%" class="small-img" >
                     </div>
                     <div class=small-img-col>
-                        <img src="Products/Clothing/manFashion/man1/m2.png" width="60%" class="small-img">
+                        <img src="Products/Clothing/manFashion/man1/m2.png" width="60%" class="small-img" >
                     </div>
                     <div class=small-img-col>
-                        <img src="Products/Clothing/manFashion/man1/m4.png" width="60%" class="small-img">
+                        <img src="Products/Clothing/manFashion/man1/m4.png" width="60%" class="small-img" >
                     </div>
                 </div>
             </div>
@@ -69,17 +70,17 @@
     </div>
 
     <!----------------js for only one product --------------->
-    <script>
-        var ProductImg = document.getElementById("man1");
-        var smallImg = document.getElementByClassName("small-img");
+        <script type="text/javascript">
+         var ImageDisplayed = document.getElementById("ImageDisplayed");
+        var smallImg = document.getElementsByClassName("small-img");
         smallImg[0].onclick = function () {
-            ProductImg.src = smallImg[0].src;
+            ImageDisplayed.src = smallImg[0].src;
         }
         smallImg[1].onclick = function () {
-            ProductImg.src = smallImg[1].src;
+            ImageDisplayed.src = smallImg[1].src;
         }
         smallImg[2].onclick = function () {
-            ProductImg.src = smallImg[2].src;
+            ImageDisplayed.src = smallImg[2].src;
         }
     </script>
 </body>

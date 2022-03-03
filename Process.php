@@ -50,5 +50,6 @@ if (isset($_POST["AddToCart"])) {
     settype($productID,"integer");
     $query= "INSERT INTO cart(product_id,user_id,size,quantity) values($productID,$userID,'$size',$quantity)";
     mysqli_query($connection,$query);
+    header("Location:AllProductPage.php");
     echo $size;
 }

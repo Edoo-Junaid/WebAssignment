@@ -498,3 +498,11 @@ form a {
   margin:auto;
   display:flex;
 }
+
+/*************************************Checkout*********************/
+.checkoutForm{
+  margin-left: 10%;
+}
+.checkoutPage{
+  display: flex;
+}

@@ -12,6 +12,13 @@ $product_shuffle = $product->getData();
 
 <div class="products">
   <div class="row-container">
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> d65e744d4e72b4e9a542d94eb0148d6053856da9
           <h1 class="title">OUR PRODUCTS</h1>
    
             <div class="row1">

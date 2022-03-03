@@ -216,14 +216,15 @@ header h2 {
   transition: transform 0.5s;
 }
 .column3:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 .column3 img {
-
-  width: 100%;
-  height: 300px;
+  height: 400px;
+  width: 400px;
 }
-
+.column3 h4{
+  width: 400px;
+}
 h1 {
   text-align: center;
 }
@@ -234,6 +235,7 @@ h1 {
   position: relative;
   line-height: 60px;
   color: #555;
+  width: 500px;
 }
 
 .title::after {

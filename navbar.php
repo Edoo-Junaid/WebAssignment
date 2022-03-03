@@ -26,7 +26,7 @@ if (session_status() == PHP_SESSION_NONE) {
       <ul class="nav_links">
         <li><a href="main.php">Home</a></li>
         <li><a href="AllProductPage.php">Products</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="AboutUs.php">About</a></li>
         <li><a href="contactUs.php">Contact Us</a></li>
         <li><a href="">Account</a></li>
 

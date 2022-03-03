@@ -67,6 +67,14 @@ if(isset($_POST["contactUs"])){
 }
 
 if(isset($_POST["ShippingDetails"])){
-    $_SESSION['a']=$_POST['firstName'];
-    header("Location:\checkOutPage.php");
+    session_start();
+    $_SESSION['firstName']=$_POST['firstName'];
+    $_SESSION['lastName']=$_POST['lastName'];
+    $_SESSION['Address']=$_POST['Address'];
+    $_SESSION['phoneNumber']=$_POST['phoneNumber'];
+    $_SESSION['Town']=$_POST['Town'];
+    $_SESSION['state']=$_POST['state'];
+    $_SESSION['zip']=$_POST['zip'];
+    $_SESSION['comments']=$_POST['comments'];
+    header("Location:checkoutPage.php");
 }

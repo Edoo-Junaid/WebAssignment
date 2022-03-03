@@ -9,27 +9,29 @@
     <?php
     session_start();
     include("navbar.php");
+
+
     ?>
     <div class="checkoutPage">
         <div class="checkoutForm">
             <h1 class='title'>Shipping details</h1>
-            <form method="post" action="process.php" onsubmit="required()" name="shipping">
+            <form method="post" name="shipping" action="Process.php">
                 <p>First Name: </p>
-                <input id="acv" type="text" name="firstName" value="<?php echo isset($_SESSION['firstName']) ? $_SESSION['firstName'] : ''; ?>">
+                <input id="firstname" type="text" name="firstName" value="<?php echo isset($_SESSION['firstName']) ? $_SESSION['firstName'] : ''; ?>">
                 <p>Last Name</p>
-                <input type="text" name="lastName" value="<?php echo isset($_SESSION['lastName']) ? $_SESSION['lastName'] : ''; ?>">
+                <input id="lastName" type="text" name="lastName" value="<?php echo isset($_SESSION['lastName']) ? $_SESSION['lastName'] : ''; ?>">
                 <p>Address</p>
-                <input type="text" name="Address" placeholder="Street" value="<?php echo isset($_SESSION['Address']) ? $_SESSION['Address'] : ''; ?>">
+                <input id="Address" type="text" name="Address" placeholder="Street" value="<?php echo isset($_SESSION['Address']) ? $_SESSION['Address'] : ''; ?>">
                 <p>Phone number</p>
-                <input type="number" name="phoneNumber" value="<?php echo isset($_SESSION['phoneNumber']) ? $_SESSION['phoneNumber'] : ''; ?>">
+                <input id="phoneNumber" type="number" name="phoneNumber" value="<?php echo isset($_SESSION['phoneNumber']) ? $_SESSION['phoneNumber'] : ''; ?>">
                 <p>Town</p>
-                <input type="text" name="Town" value="<?php echo isset($_SESSION['Town']) ? $_SESSION['Town'] : ''; ?>">
+                <input id="Town" type="text" name="Town" value="<?php echo isset($_SESSION['Town']) ? $_SESSION['Town'] : ''; ?>">
                 <p>State</p>
-                <input type="text" name="state" value="<?php echo isset($_SESSION['state']) ? $_SESSION['state'] : ''; ?>">
+                <input id="state" type="text" name="state" value="<?php echo isset($_SESSION['state']) ? $_SESSION['state'] : ''; ?>">
                 <p>Zip Code</p>
-                <input type="number" name="zip" value="<?php echo isset($_SESSION['zip']) ? $_SESSION['zip'] : ''; ?>">
+                <input id="zip" type="number" name="zip" value="<?php echo isset($_SESSION['zip']) ? $_SESSION['zip'] : ''; ?>">
                 <p>Comments</p>
-                <input type="text" name="comments" value="<?php echo isset($_SESSION['comments']) ? $_SESSION['comments'] : ''; ?>">
+                <input id="comments" type="text" name="comments" value="<?php echo isset($_SESSION['comments']) ? $_SESSION['comments'] : ''; ?>">
                 <input type="submit" name="ShippingDetails">
             </form>
         </div>
@@ -48,14 +50,31 @@
             </form>
         </div>
     </div>
+
 </body>
+
+
+</html>
 <script>
-    function required() {
-        var value = document.forms["shipping"]["firstName"].value;
-        if(value=="") {
-            alert("hello hello");
+    <?php
+    if (isset($_SESSION['f'])) {
+
+    ?>
+        required("firstname");
+        required("lastName");
+        required("Address");
+        required("Town");
+        required("zip");
+
+    <?php
+        unset($_SESSION['f']);
+    }
+    ?>
+
+    function required(id) {
+        var field = document.getElementById(id);
+        if (field.value == "") {
+            field.style.backgroundColor = "rgba(255, 0, 0, 0.808)";
         }
     }
 </script>
-
-</html>

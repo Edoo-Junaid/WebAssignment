@@ -68,6 +68,7 @@ if(isset($_POST["contactUs"])){
 
 if(isset($_POST["ShippingDetails"])){
     session_start();
+    $_SESSION['f']=1;
     $_SESSION['firstName']=$_POST['firstName'];
     $_SESSION['lastName']=$_POST['lastName'];
     $_SESSION['Address']=$_POST['Address'];

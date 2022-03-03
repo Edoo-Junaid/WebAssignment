@@ -28,7 +28,6 @@
                     <input type="text" placeholder="Message">
                     <input type="submit">
                 </form>
-
             </div>
         </div>
     </div>

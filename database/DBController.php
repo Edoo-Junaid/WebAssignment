@@ -6,9 +6,9 @@ class DBController
 
     protected $host= 'localhost';
 
-    protected $user='root';
-    protected $password='';
-    protected $database='stylishboutique';
+    protected $user='yahya';
+    protected $password='1234';
+    protected $database='ecommerce';
 
 
     //connecion property

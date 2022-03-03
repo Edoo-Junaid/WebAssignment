@@ -6,23 +6,16 @@ include("navbar.php");
 $product_shuffle = $product->getData();
 ?>
 
-
 <!--------------------------------------------------Products---------------------------------------------->
-
-
 <div class="products">
   <div class="row-container">
-
-    <h1 class="title">OUR PRODUCTS</h1>
-
-    <h1></h1>
+   <h1></h1>
     <?php
     $clothing = true;
     $shoes = true;
     $watch = true;
     $phoneAccesories = true;
     ?>
-
     <?php foreach ($product_shuffle as $item) { ?>
       <?php if ($item['category'] == "clothing") { ?>
         <?php if ($clothing) {
@@ -48,6 +41,7 @@ $product_shuffle = $product->getData();
             echo "<h1 class='title'>Shoes</h1>";
           ?>
             <div class="row1">
+
             <?php
             echo "<br>";
             $shoes = false;
@@ -108,3 +102,4 @@ $product_shuffle = $product->getData();
             <?php
             include("Footer.php");
             ?>
+

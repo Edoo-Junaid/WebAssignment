@@ -336,11 +336,16 @@ input:focus {
   justify-content: flex-start;
 }
 .small-img-col {
+  padding-top:10px;
   flex-basis: 24%;
   cursor: pointer;
+  
+  
 }
 .small-img-col img {
+ 
   height: 70px;
+  border: 3px solid green;
 }
 .column6 {
   flex-basis: 50%;

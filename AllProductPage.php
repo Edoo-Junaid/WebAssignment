@@ -9,6 +9,17 @@ $product_shuffle = $product->getData();
 <!--------------------------------------------------Products---------------------------------------------->
 <div class="products">
   <div class="row-container">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> d65e744d4e72b4e9a542d94eb0148d6053856da9
+          <h1 class="title">OUR PRODUCTS</h1>
+   
+=======
    <h1></h1>
     <?php
     $clothing = true;
@@ -40,6 +51,7 @@ $product_shuffle = $product->getData();
           <?php if ($shoes) {
             echo "<h1 class='title'>Shoes</h1>";
           ?>
+>>>>>>> 8a4cf61a7f53b34d3aaf73fa914633f9f8a4d097
             <div class="row1">
 
             <?php

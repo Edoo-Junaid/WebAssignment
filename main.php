@@ -19,7 +19,7 @@ include("navbar.php");
         <h1>Explore & Discover Our Collections !</h1>
         <div class="button1"> <a href="AllProductPage.php">Explore Now &#8594</a></div>
       </div>
-      <div class="column2"><img name="slide" > </div>
+      <div class="column2"><img name="slide"> </div>
     </div>
   </div>
 
@@ -66,7 +66,7 @@ include("navbar.php");
           <p class="star"> &#9733 &#9733 &#9733 &#9733 &#x2606 </p>
         </div>
         <div class="column3"><img src="Products/Watches/watch5/b1.png"><br>
-          <h4>BeaQueen Sterling Cute Crystal Jewelry Big Flower  Bracelet for Women</h4><br>
+          <h4>BeaQueen Sterling Cute Crystal Jewelry Big Flower Bracelet for Women</h4><br>
           <p><del style="color:red">MUR 380.00</del>MUR 152.00</p><br>
           <p class="star">&#9733 &#9733 &#9733 &#9733 &#x2606 </p>
         </div>
@@ -105,41 +105,41 @@ include("navbar.php");
     </div>
 
   </div>
- <script> 
-var i = 0; 			// Start Point
-var images = [];	// Images Array
-var time = 2000;	// Time Between Switch
-	 
-// Image List
-images[0] = "Images/aquarium-centre-commercial-dubai.webp";
-images[1] = "Images/Best-shopping-places-dubai-860x574.jpg";
-images[2] = "Images/family.jpg";
-images[3] = "Images/slide.jpg";
-images[4] = "Images/slide2.jpg";
+  <script>
+    var i = 0; // Start Point
+    var images = []; // Images Array
+    var time = 2000; // Time Between Switch
 
-// Change Image
-function changeImg(){
-	document.slide.src = images[i];
+    // Image List
+    images[0] = "Images/aquarium-centre-commercial-dubai.webp";
+    images[1] = "Images/Best-shopping-places-dubai-860x574.jpg";
+    images[2] = "Images/family.jpg";
+    images[3] = "Images/slide.jpg";
+    images[4] = "Images/slide2.jpg";
 
-	// Check If Index Is Under Max
-	if(i < images.length - 1){
-	  // Add 1 to Index
-	  i++; 
-	} else { 
-		// Reset Back To O
-		i = 0;
-	}
+    // Change Image
+    function changeImg() {
+      document.slide.src = images[i];
 
-	// Run function every x seconds
-	setTimeout("changeImg()", time);
-}
+      // Check If Index Is Under Max
+      if (i < images.length - 1) {
+        // Add 1 to Index
+        i++;
+      } else {
+        // Reset Back To O
+        i = 0;
+      }
 
-// Run function when page loads
-window.onload=changeImg;
-</script>
+      // Run function every x seconds
+      setTimeout("changeImg()", time);
+    }
 
-  <?php 
-  
+    // Run function when page loads
+    window.onload = changeImg;
+  </script>
+
+  <?php
+
   include("Footer.php");
   ?>
 

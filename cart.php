@@ -11,8 +11,11 @@
 
     include("navbar.php");
     include("Connection.php");
+    include("funtion.php");
+    if (!check_login()){
+        header("Location:LoginPage.php");
+    }
     ?>
-
 
     <div class="cartPage">
         <div class="Cart">

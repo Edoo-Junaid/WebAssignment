@@ -21,7 +21,6 @@ if (session_status() == PHP_SESSION_NONE) {
 
   <header>
     <h2> STYLISH SHOP</h2>
-
     <nav>
       <ul class="nav_links">
         <li><a href="main.php">Home</a></li>
@@ -39,7 +38,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <div class=dropdown>
         <li><a>Account<a></li>
           <div class=dropdown-content>
-            <li >Logout</li>
+            <li ><a href="Logout.php">Logout</a></li>
           </div>
         </div>
       </ul>

@@ -10,7 +10,7 @@ $product_shuffle = $product->getData();
   <div class="row-container">
 
     <h1 class="title">OUR PRODUCTS</h1>
-    <h1></h1>
+    
     <?php
     $clothing = true;
     $shoes = true;
@@ -23,7 +23,6 @@ $product_shuffle = $product->getData();
         <?php if ($clothing) {
           echo "<h1 id = 'clothing' class='title'>Clothing</h1>";
         ?>
-
           <div class="row1">
           <?php
           echo "<br>";

@@ -26,7 +26,7 @@
                     <input type=" text" placeholder="Last name" name="LastName">
                     <input type="email" placeholder="email" name="Email">
                     <textarea class="message" placeholder="Your Message" name="message"> </textarea>
-                    <input type="submit" name="contactUs">
+                    <input class="btn" type="submit" name="contactUs">
                 </form>
             </div>
         </div>

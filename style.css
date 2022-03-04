@@ -601,9 +601,7 @@ td {
 .AboutUs {
   margin: 50px;
 }
-.map {
-  padding-left: 10%;
-}
+
 
 .About-container {
   max-width: 100%;
@@ -613,10 +611,14 @@ td {
 }
 
 .desc {
-  margin-right: 160px;
+ 
   text-align: justify;
+
 }
 .desc h3 {
+  font: 1em sans-serif;
+  font-size: 20px;
+  line-height: 25px;
   text-align: center;
   text-align: justify;
 }

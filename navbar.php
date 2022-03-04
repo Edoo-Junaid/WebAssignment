@@ -43,8 +43,6 @@ if (session_status() == PHP_SESSION_NONE) {
     <div class="Icons">
       <a href="cart.php"><img class="cart" src="images/cart.png" alt="logo"></a>
       <img class="user_Icon" src="images/userIcon.png">
-
-
       <?php
       if (isset($_SESSION['username'])) {
         $user = $_SESSION['username'];
@@ -60,6 +58,6 @@ if (session_status() == PHP_SESSION_NONE) {
     function scrollCategory(category) {
       var element = document.getElementById(category);
       element.scrollIntoView();
-
+      
     }
   </script>

@@ -1,7 +1,7 @@
 <?php
 
 include("Connection.php");
-
+include("funtion.php");
 if (isset($_POST["register_button"])) {
     echo "hello";
     $username = $_POST["username"];
@@ -11,8 +11,8 @@ if (isset($_POST["register_button"])) {
         $query = "INSERT INTO Users(username,password,email) VALUES ('$username',$password,'$email')";
         mysqli_query($connection, $query);
         header("Location:main.php");
-        die();
     }
+    header("Location:LoginPage.php");
 }
 
 if (isset($_POST["login_button"])) {
@@ -31,7 +31,6 @@ if (isset($_POST["login_button"])) {
                 $_SESSION['username'] = $username;
                 $_SESSION['userID'] = $user_data['user_id'];
                 header("Location:main.php");
-                die;
             }
         }
     }
@@ -40,8 +39,14 @@ if (isset($_POST["login_button"])) {
 
 if (isset($_POST["AddToCart"])) {
     session_start();
+    if (!check_login()){
+        echo "hello";
+        header("Location:LoginPage.php");
+      die;
+    }
     $quantity = $_POST["Quantity"];
     $size = $_POST["size"];
+    $colour=$_POST["colour"];
     $userID = $_SESSION['userID'];
     settype($userID, "integer");
     $productID = $_SESSION['productID'];
@@ -58,10 +63,10 @@ if (isset($_POST["AddToCart"])) {
             mysqli_query($connection, $queryUpdate);
             header("Location:AllProductPage.php");
         } else {
-            $query1 = "INSERT INTO cart(product_id,user_id,size,quantity) values($productID,$userID,'$size',$quantity)";
+            $query1 = "INSERT INTO cart(product_id,user_id,size,quantity,colour) values($productID,$userID,'$size',$quantity,'$colour')";
             mysqli_query($connection, $query1);
             echo "hello";
-            header("Location:AllProductPage.php");
+           header("Location:AllProductPage.php");
         }
     } else {
         $query = "INSERT INTO cart(product_id,user_id,size,quantity) values($productID,$userID,'$size',$quantity)";

@@ -18,18 +18,15 @@ $product_shuffle = $product->getData();
     $phoneAccesories = true;
     ?>
     <?php foreach ($product_shuffle as $item) { ?>
-<<<<<<< HEAD
 
-=======
->>>>>>> a39a1b166b74fc411b66a4a638ad574db190411b
+
       <?php if ($item['sections'] == "clothing") { ?>
         <?php if ($clothing) {
           echo "<h1 id = 'clothing' class='title'>Clothing</h1>";
         ?>
-<<<<<<< HEAD
 
-=======
->>>>>>> a39a1b166b74fc411b66a4a638ad574db190411b
+
+
           <div class="row1">
           <?php
           echo "<br>";

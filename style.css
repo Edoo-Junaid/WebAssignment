@@ -314,10 +314,7 @@ header h2 {
   min-width: 300px;
   padding:15px;
   flex-basis: 30%;
-<<<<<<< HEAD
-=======
-  min-width: 300px;
->>>>>>> a39a1b166b74fc411b66a4a638ad574db190411b
+
   margin-bottom: 30px;
   transition: transform 0.5s;
 }
@@ -330,14 +327,9 @@ header h2 {
   width: 300px;
 }
 
-.column8 h4{
-
-<<<<<<< HEAD
-
-=======
+/*.column8 h4{
 width: 300px;
->>>>>>> a39a1b166b74fc411b66a4a638ad574db190411b
-}
+}*/
 
 h1 {
   text-align: center;

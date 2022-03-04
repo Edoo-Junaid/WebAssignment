@@ -4,7 +4,7 @@ include("navbar.php");
 ?>
 <div class="AboutUs">
     <div class="About-container">
-        <h1 class="title">ABOUT US</h1>
+       
         <h1 class="title">Who are we</h1>
         <div class="desc">
             <h3>We believe in a world where you have total freedom to be you, without judgement.

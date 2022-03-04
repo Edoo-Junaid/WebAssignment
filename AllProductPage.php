@@ -8,6 +8,7 @@ $product_shuffle = $product->getData();
 <!--------------------------------------------------Products---------------------------------------------->
 <div class="products">
   <div class="row-container">
+
     <h1 class="title">OUR PRODUCTS</h1>
     <h1></h1>
     <?php
@@ -17,8 +18,8 @@ $product_shuffle = $product->getData();
     $phoneAccesories = true;
     ?>
     <?php foreach ($product_shuffle as $item) { ?>
-      <?php if ($item['category'] == "clothing") { ?>
 
+      <?php if ($item['category'] == "clothing") { ?>
         <?php if ($clothing) {
           echo "<h1 id = 'clothing' class='title'>Clothing</h1>";
         ?>
@@ -38,7 +39,7 @@ $product_shuffle = $product->getData();
             </div>
           
         <?php } ?>
-        <?php if ($item['category'] == "shoes") { ?>
+        <?php if ($item['sections'] == "shoes") { ?>
           <?php if ($shoes) {
             echo "<h1 id = 'shoes' class='title'>Shoes</h1>";
           ?>
@@ -58,7 +59,7 @@ $product_shuffle = $product->getData();
               </a>
             </div>
           <?php } ?>
-          <?php if ($item['category'] == "watch") { ?>
+          <?php if ($item['sections'] == "watch") { ?>
             <?php if ($watch) {
               echo "<h1 id = 'watch' class='title'>Watch</h1>";
             ?>
@@ -77,7 +78,7 @@ $product_shuffle = $product->getData();
                 </a>
               </div>
             <?php } ?>
-            <?php if ($item['category'] == "Phone Accesories") { ?>
+            <?php if ($item['sections'] == "Phone Accesories") { ?>
               <?php if ($phoneAccesories) {
                 echo "<h1 id = 'PhoneAccessories' class='title'>Phone Accesories</h1>";
               ?>

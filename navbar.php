@@ -9,7 +9,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <head>
 
-  <title>Stylish Boutique</title>
+  <title>Stylish Shop</title>
   <link rel="stylesheet" href="style.css" type="text/css">
   <?php
   //require function.php
@@ -20,7 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <body>
 
   <header>
-    <h2> STYLISH BOUTIQUE</h2>
+    <h2> STYLISH SHOP</h2>
 
     <nav>
       <ul class="nav_links">

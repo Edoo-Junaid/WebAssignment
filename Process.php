@@ -84,16 +84,25 @@ if (isset($_POST["contactUs"])) {
 
 if (isset($_POST["ShippingDetails"])) {
     session_start();
-    $_SESSION['f'] = 1;
-    $_SESSION['firstName'] = $_POST['firstName'];
-    $_SESSION['lastName'] = $_POST['lastName'];
-    $_SESSION['Address'] = $_POST['Address'];
-    $_SESSION['phoneNumber'] = $_POST['phoneNumber'];
-    $_SESSION['Town'] = $_POST['Town'];
-    $_SESSION['state'] = $_POST['state'];
-    $_SESSION['zip'] = $_POST['zip'];
-    $_SESSION['comments'] = $_POST['comments'];
-    header("Location:checkoutPage.php");
+    $_SESSION['shippingDetails'] = true;
+    $firstName = $_SESSION['firstName'] = $_POST['firstName'];
+    $lastName = $_SESSION['lastName'] = $_POST['lastName'];
+    $address = $_SESSION['Address'] = $_POST['Address'];
+    $phoneNumber = $_SESSION['phoneNumber'] = $_POST['phoneNumber'];
+    $town = $_SESSION['Town'] = $_POST['Town'];
+    $state = $_SESSION['state'] = $_POST['state'];
+    $zip = $_SESSION['zip'] = $_POST['zip'];
+    $comments = $_SESSION['comments'] = $_POST['comments'];
+    $userID = $_SESSION['userID'];
+    if (empty($firstName) || empty($lastName) || empty($address) || empty($town) || empty($zip)) {
+        echo "hola";
+        header("Location:checkoutPage.php");
+    } else {
+        echo "hello";
+        $query = "INSERT INTO shippingdetails values ($userID,'$firstName','$lastName','$address',$phoneNumber,'$town','$state',$zip,'$comments')";
+        mysqli_query($connection, $query);
+        header("Location:checkoutPage.php");
+    }
 }
 
 if (isset($_GET["deleteCartID"])) {

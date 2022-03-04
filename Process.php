@@ -105,6 +105,17 @@ if (isset($_POST["ShippingDetails"])) {
     }
 }
 
+if (isset($_POST['cardDetails'])) {
+    $userID = $_SESSION['userID'];
+    $cardNumber = $_POST['cardNumber'];
+    $name = $_POST['cardName'];
+    $expDate = $_POST['expiry'];
+    $securityCode = $_POST['securityCode'];
+
+    $query = "INSERT INTO cardDetails VALUES ($userID,$cardNumber,'$name','$expDate',$securityCode)";
+    mysqli_query($connection, $query);
+}
+
 if (isset($_GET["deleteCartID"])) {
     $cartID = $_GET["deleteCartID"];
     $query = "DELETE FROM cart WHERE cart_id=$cartID";

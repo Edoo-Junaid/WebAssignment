@@ -106,6 +106,20 @@ header h2 {
 .button1:hover {
   background: #563434;
 }
+.column3 {
+  padding:15px;
+  flex-basis: 25%;
+  min-width: 300px;
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+}
+.column3:hover {
+  transform: translateY(-10px);
+}
+.column3 img {
+  height: 300px;
+  width: 300px;
+}
 /*---------------Special offer part*-----------------------------------------------------------*/
 /*---------------Special offer part*-----------------------------------------------------------*/
 .offer {
@@ -199,22 +213,22 @@ header h2 {
   justify-content: flex-start;
   justify-content: space-evenly;
 }
-.column3 {
+.column8 {
   padding:15px;
-  flex-basis: 25%;
+  flex-basis: 30%;
   min-width: 300px;
   margin-bottom: 30px;
   transition: transform 0.5s;
 }
-.column3:hover {
+.column8:hover {
   transform: translateY(-10px);
 }
-.column3 img {
+.column8 img {
   height: 300px;
   width: 300px;
 }
 
-.column3 h4{
+.column8 h4{
 
 
 }
@@ -362,7 +376,7 @@ flex-basis:25%;
 min-width: 300px;
 flex-direction: column;
 position: relative;
-left:200px;
+left:180px;
 }
 
 /*.additionalDetails h3 {

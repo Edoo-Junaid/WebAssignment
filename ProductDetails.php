@@ -34,7 +34,7 @@ foreach ($product->getData() as $item) :
                     <p style="font-weight: bold;">Item</p>
                     <h1 style="text-align: left;"><?php echo $item['category']; ?></h1>
                     <h4 style="font-weight: bold;"> <?php echo $item['Title']; ?></h4>
-                    <form method="post" action="Process.php">
+                    <form name="productDetail" method="post" action="Process.php" onsubmit="validateForm()">
                         <select name="size">
                             <option>Select Size</option>
                             <option>XXL</option>
@@ -91,6 +91,18 @@ foreach ($product->getData() as $item) :
         smallImg[3].onclick = function () {
             ImageDisplayed.src = smallImg[3].src;
         }
+
+        function validateForm() {
+         let x = document.forms["productDetail"]["Quantity"].value;
+        if (x <= 0 || x=="") {
+         alert("Enter Quantity which is greater than zero");
+        return false;
+       }
+       else if (x>25){
+        alert("You cannot buy more than 25  ");
+        return false;
+       }
+}
       
         </script>
         </body>

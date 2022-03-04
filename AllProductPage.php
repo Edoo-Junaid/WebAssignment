@@ -33,7 +33,7 @@ $product_shuffle = $product->getData();
           $clothing = false;
         }
           ?>
-          <div class="column3">
+          <div class="column8">
             <a href="<?php printf('%s?ID=%s', 'ProductDetails.php', $item['ID']) ?>">
               <img src="<?php echo $item['pictures']; ?>">
               <h4> <?php echo $item['Title']; ?> </h4>
@@ -54,7 +54,7 @@ $product_shuffle = $product->getData();
             $shoes = false;
           }
             ?>
-            <div class="column3">
+            <div class="column8">
               <a href="<?php printf('%s?ID=%s', 'ProductDetails.php', $item['ID']) ?>">
                 <img src="<?php echo $item['pictures']; ?>">
                 <h4> <?php echo $item['Title']; ?> </h4>
@@ -73,7 +73,7 @@ $product_shuffle = $product->getData();
               $watch = false;
             }
               ?>
-              <div class="column3">
+              <div class="column8">
                 <a href="<?php printf('%s?ID=%s', 'ProductDetails.php', $item['ID']) ?>">
                   <img src="<?php echo $item['pictures']; ?>">
                   <h4> <?php echo $item['Title']; ?> </h4>
@@ -92,7 +92,7 @@ $product_shuffle = $product->getData();
                 $phoneAccesories = false;
               }
                 ?>
-                <div class="column3">
+                <div class="column8">
                   <a href="<?php printf('%s?ID=%s', 'ProductDetails.php', $item['ID']) ?>">
                     <img src="<?php echo $item['pictures']; ?>">
                     <h4> <?php echo $item['Title']; ?> </h4>

@@ -34,7 +34,7 @@ foreach ($product->getData() as $item) :
                     <p style="font-weight: bold;">Item</p>
                     <h1 style="text-align: left;"><?php echo $item['category']; ?></h1>
                     <h4 style="font-weight: bold;"> <?php echo $item['Title']; ?></h4>
-                    <form method="post" action="Process.php">
+                    <form name="productDetail" method="post" action="Process.php" onsubmit="validateForm()">
                         <select name="size">
                             <option>Select Size</option>
                             <option>XXL</option>
@@ -42,6 +42,14 @@ foreach ($product->getData() as $item) :
                             <option>Large</option>
                             <option>Medium</option>
                             <option>Small</option>
+                        </select>
+                        <select name="colour">
+                            <option>Select Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Black</option>
+                            <option>Multicoloured</option>
+                            <option>orange</option>
                         </select>
                         <br>
                         <label for="Quantity">Quantity:</label><br>
@@ -53,12 +61,17 @@ foreach ($product->getData() as $item) :
                         <div class="type2"><input type="submit" value="Add to cart" name="AddToCart"></div>
                     </form>
                 </div>
-            </div>
-            <div>
+                <div class="additionalDetails">
                 <h3>Product Details</h3>
                 <?php $pdResult= explode(',',$item['Item_Details']); ?>
-
-                <h3><?php echo $item['Item_Details'];?></h3>
+                <ul>
+                <?php foreach($pdResult as $r){?>
+                   
+                    <div class="listdisplay"><h3> <li><?php echo $r ;?></li></h3></div>
+                    
+                   <?php }?>
+                 </ul>     
+            </div>
             </div>
         </div>
         
@@ -78,6 +91,18 @@ foreach ($product->getData() as $item) :
         smallImg[3].onclick = function () {
             ImageDisplayed.src = smallImg[3].src;
         }
+
+        function validateForm() {
+         let x = document.forms["productDetail"]["Quantity"].value;
+        if (x <= 0 || x=="") {
+         alert("Enter Quantity which is greater than zero");
+        return false;
+       }
+       else if (x>25){
+        alert("You cannot buy more than 25  ");
+        return false;
+       }
+}
       
         </script>
         </body>

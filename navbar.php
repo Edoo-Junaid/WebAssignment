@@ -36,8 +36,12 @@ if (session_status() == PHP_SESSION_NONE) {
         </div>
         <li><a href="AboutUs.php">About</a></li>
         <li><a href="contactUs.php">Contact Us</a></li>
-        <li><a href="">Account</a></li>
-
+        <div class=dropdown>
+        <li><a>Account<a></li>
+          <div class=dropdown-content>
+            <li >Logout</li>
+          </div>
+        </div>
       </ul>
     </nav>
     <div class="Icons">

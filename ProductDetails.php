@@ -43,6 +43,14 @@ foreach ($product->getData() as $item) :
                             <option>Medium</option>
                             <option>Small</option>
                         </select>
+                        <select name="colour">
+                            <option>Select Colour</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Black</option>
+                            <option>Multicoloured</option>
+                            <option>orange</option>
+                        </select>
                         <br>
                         <label for="Quantity">Quantity:</label><br>
                         <input type="text" value="1" name="Quantity"><br>
@@ -53,12 +61,17 @@ foreach ($product->getData() as $item) :
                         <div class="type2"><input type="submit" value="Add to cart" name="AddToCart"></div>
                     </form>
                 </div>
-            </div>
-            <div>
+                <div class="additionalDetails">
                 <h3>Product Details</h3>
                 <?php $pdResult= explode(',',$item['Item_Details']); ?>
-
-                <h3><?php echo $item['Item_Details'];?></h3>
+                <ul>
+                <?php foreach($pdResult as $r){?>
+                   
+                    <div class="listdisplay"><h3> <li><?php echo $r ;?></li></h3></div>
+                    
+                   <?php }?>
+                 </ul>     
+            </div>
             </div>
         </div>
         

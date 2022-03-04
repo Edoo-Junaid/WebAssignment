@@ -4,7 +4,6 @@ include("navbar.php");
 ?>
 <div class="AboutUs">
     <div class="About-container">
-
         <h1 class="title">ABOUT US</h1>
         <h1 class="title">Who are we</h1>
         <div class="desc">
@@ -13,7 +12,6 @@ include("navbar.php");
                 <br>We help brands and sellers connect with many shoppers on Stylish Shop. With 5 years of eCommerce expertise, we’ll be your partner in crafting effective channel, audience, and media strategies. Whether your focus is on broad awareness
             </h3>
         </div>
-
         <h1 class="title">Our brands</h1>
         <div class="desc">
             <h3>Get more than 20 brands straight to your pocket which include clothings , shoes ,watches , jewelries and Android phones and accessories.<h3>
@@ -49,8 +47,6 @@ include("navbar.php");
             <h3>We don’t care about where you’ve come from – we care about where you can take us. We need people who take pride in what they do and take ownership of their decisions. We need candidates who will stand by their convictions, and act decisively, commercially and instinctively in the face of challenge.
             </h3>
         </div>
-
-    
         <div class="desc">
             <h3>We're committed to providing a secure and fair marketplace for our buyers and sellers. To support this commitment, we've put in place rules and policies that govern our expectations of buyers and sellers, the actions we'll take to keep you safe, and how we'll protect you if something goes wrong.
                 The Verified Rights Owner (VeRO) program allows owners of intellectual property (IP) rights and their authorized representatives to report to us listings that may infringe on those rights. VeRO embodies our commitment to provide a safe place to buy and sell, which respects property owners' rights.

@@ -11,12 +11,15 @@
 
     include("navbar.php");
     include("Connection.php");
+    include("funtion.php");
+    if (!check_login()){
+        header("Location:LoginPage.php");
+    }
     ?>
 
-    
     <div class="cartPage">
         <div class="Cart">
-        <h2 class="cartTitle">Shopping Cart</h2>
+            <h2 class="title">Shopping Cart</h2>
             <table>
                 <tr>
                     <th>Image</th>
@@ -36,23 +39,17 @@
                     $query = "SELECT * FROM products WHERE ID = $row[product_id]";
                     $productResult = mysqli_query($connection, $query);
                     $productData = mysqli_fetch_assoc($productResult);
-                    $productName = $productData['Title'];
-                    $productPrice = $productData['price'];
-                    $quantity = $row['quantity'];
-                    $size = $row['size'];
-                    $image = $productData['pictures'];
-                    $subTotal = $quantity * $productPrice;
+                    $subTotal = $row['quantity'] * $productData['price'];
                     $subTotalFinal = $subTotalFinal + $subTotal;
-                    //    $query1= "select * from products where product_id = $row[product_id]";
                 ?>
                     <tr>
-                        <td><img src=<?php echo $image;  ?> class="cartImage"></td>
-                        <td> <?php echo $productName; ?></td>
-                        <td><?php echo $size; ?></td>
-                        <td> <?php echo $productPrice; ?></td>
-                        <td> <?php echo $quantity; ?></td>
+                        <td><img src=<?php echo $productData['pictures'];  ?> class="cartImage"></td>
+                        <td> <?php echo $productData['Title']; ?></td>
+                        <td><?php echo $row['size']; ?></td>
+                        <td> <?php echo $productData['price']; ?></td>
+                        <td> <?php echo $row['quantity']; ?></td>
                         <td> <?php echo $subTotal; ?></td>
-                        <td><img src="Images/minusLogo.png" width="20px"></td>
+                        <td><a href="<?php printf('%s?deleteCartID=%s', 'Process.php', $row['cart_id']) ?>"><img src="Images/minusLogo.png" width="20px"></td>
                     </tr>
                 <?php
                 endforeach;
@@ -77,7 +74,7 @@
                 </tr>
             </table>
             <div class="chechoutbtn">
-                <a href="checkoutPage.php" >Proceed to checkout</a>
+                <a href="checkoutPage.php">Proceed to checkout</a>
             </div>
         </div>
     </div>

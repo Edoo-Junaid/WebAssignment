@@ -314,6 +314,10 @@ header h2 {
   min-width: 300px;
   padding:15px;
   flex-basis: 30%;
+<<<<<<< HEAD
+=======
+  min-width: 300px;
+>>>>>>> a39a1b166b74fc411b66a4a638ad574db190411b
   margin-bottom: 30px;
   transition: transform 0.5s;
 }
@@ -328,7 +332,11 @@ header h2 {
 
 .column8 h4{
 
+<<<<<<< HEAD
 
+=======
+width: 300px;
+>>>>>>> a39a1b166b74fc411b66a4a638ad574db190411b
 }
 
 h1 {
@@ -373,7 +381,9 @@ h4 {
 .small-container1 {
   max-width: 1080px;
   padding: 20px;
+  
 }
+
 .row2 {
   display: flex;
   align-items: center;
@@ -641,9 +651,6 @@ td {
 .AboutUs {
   margin: 50px;
 }
-.map {
-  padding-left: 10%;
-}
 
 .About-container {
   max-width: 100%;
@@ -653,10 +660,14 @@ td {
 }
 
 .desc {
-  margin-right: 160px;
+ 
   text-align: justify;
+
 }
 .desc h3 {
+  font: 1em sans-serif;
+  font-size: 20px;
+  line-height: 25px;
   text-align: center;
   text-align: justify;
 }
@@ -737,4 +748,16 @@ td {
   padding-top :100px;
   background-color: rgba(255, 255, 255, 0.808);
   margin-left: 10%;
+}
+
+.orderSummary{
+  padding-left: 17%;
+}
+
+#orderBtn {
+  font-size:20px;
+  height: 40px;
+  padding-left: 10%;
+  margin-left: 25%;
+  padding-right:10%;
 }

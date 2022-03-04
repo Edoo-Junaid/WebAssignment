@@ -96,8 +96,9 @@ include("navbar.php");
         <div class="column4">
           <p><h3>Exclusively Available on Stylish Boutique</h3></p>
           <small><strong>get rid bulkiness enjoy lightness</strong></small>
-          <h1>Sports Watch</h1>
-          <small><h3>smart watch with 15 features sleepmonitoring Bloodpressure HeartRate step Calories Multiplesports Remotecamera Blood oxygen Incomingcall Informationreminder Longstanby Alarm Musiccontrol FindPhone<h3></small>
+          <h1>Smart Watch</h1>
+          <small><h3>smart watch with 15 features sleepmonitoring Bloodpressure HeartRate step Calories Multiplesports 
+            Remotecamera Blood oxygen Incomingcall Informationreminder Longstanby Alarm Musiccontrol FindPhone<h3></small>
           <br>
           <div class="spbutton"><a href="ProductDetails.php" class="button1">Buy Now &#8594;</a></div>
         </div>

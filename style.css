@@ -132,7 +132,7 @@ header h2 {
   margin: 30px;
   border-radius: 30px;
   position: relative;
-  left: 200px;
+  left: 220px;
 }
 .button1 a {
   color: white;
@@ -168,7 +168,6 @@ header h2 {
 }
 .offer {
   background: radial-gradient( #9999ff, #ccccff);
- 
 }
 .spbutton{
   position:relative;
@@ -367,7 +366,6 @@ h4 {
 }*/
 .star {
   color: #ff523b;
-
 }
  /*Single product details----------------------------------------------*/
 .small-container1 {

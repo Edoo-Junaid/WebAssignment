@@ -1,5 +1,5 @@
 /*Homepage Fist Part*/
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,7 +10,9 @@ a,
 button {
   text-decoration: none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -20,21 +22,48 @@ header {
 
 header h2 {
   color: #59ab6e;
+  font-size: 35px;
 }
 .nav_links li {
+
   font: 1em sans-serif;
   color: #111;
   display: inline-block;
   padding: 0 10px;
 }
 .nav_links li a {
+  font-size: 20px;
   color: #000000;
   transition: all 0.2s ease 0s;
 }
 .nav_links li a:hover {
   color: #59ab6e;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown-content li{
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover{
+  color: #59ab6e;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .cart {
   cursor: pointer;
   height: 30px;
@@ -43,6 +72,16 @@ header h2 {
   display: flex;
   align-items: center;
 }
+
+.Icons a{
+  font: 1em sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+.Icons a:hover{
+ color:#59ab6e;
+}
+
 .user_Icon {
   padding-left: 20px;
   height: 30px;
@@ -50,7 +89,6 @@ header h2 {
 }
 
 .row {
-  padding-top: 40px;
   min-height: 450px;
   display: flex;
   justify-content: space-around;
@@ -62,16 +100,19 @@ header h2 {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.HomeFirstPart{
+
+  background-color:#e9eef5 ;
+}
 .column2 {
   flex-basis: 50%;
   min-width: 300px;
-  box-shadow: 0 0 25px -3px rgba(0,0,0,0.4);
-  height:500px;
 }
 .column2 img {
   width: 100%;
   height: 500px;
- 
+
 }
 .column2 p {
   text-align: center;
@@ -91,8 +132,7 @@ header h2 {
   margin: 30px;
   border-radius: 30px;
   position: relative;
-  left: 290px;
-  font-size: 23px;
+  left: 200px;
 }
 .button1 a {
   color: white;
@@ -122,9 +162,13 @@ header h2 {
 }
 /*---------------Special offer part*-----------------------------------------------------------*/
 /*---------------Special offer part*-----------------------------------------------------------*/
+
+#onSales{
+  background-color:#e9eef5 ;
+}
 .offer {
   background: radial-gradient(#c299ff, #c299ff);
-  margin-top: 60px;
+ 
 }
 .column4 {
   flex-basis: 50%;
@@ -148,55 +192,66 @@ header h2 {
 }
 /*--------footer-----------*---------------------------------------------------------*/
 /*--------footer-----------*---------------------------------------------------------*/
-.footer{
+.footer {
   background: #000;
   color: #8a8a8a;
   font-size: 14px;
   padding: 60px 0 20px;
 }
-.footer p{
+.footer p {
   color: #8a8a8a;
 }
-.footer h3{
+.footer h3 {
   color: #fff;
   margin-bottom: 20px;
 }
-.footer-col1,.footer-col2,.footer-col3,.footer-col4{
- flex-basis:25%;
- height:150px;
-  margin-bottom:20px;
-  text-align:center;
+
+.footer-col1,
+.footer-col2,
+.footer-col3,
+.footer-col4 {
+  flex-basis: 20%;
+  height: 150px;
+
+  /*min-width: 250px;*/
+  margin-bottom: 20px;
+  text-align: center;
 }
-.ft2 h3{
-  padding-left:200px ;
+/*
+.footer-col1{
+    flex-basis: 30%;
 }
-
-
-
-.footer-col2 img{
+.footer-col2{
+    flex: 1;
+    text-align: center;
+}*/
+.footer-col2 img {
   width: 180px;
   margin-bottom: 20px;
 }
+/*.footer-col3,.footer-col4{
+    flex-basis: 12%;
+    text-align: center;
+}*/
 
-
-.app-logo{
+.app-logo {
+  display: flex;
   margin-top: 20px;
 }
 
-.app-logo img{
+.app-logo img {
   width: 140px;
+  margin-left: 17px;
 }
 
-.footer li{
+.footer li {
+  padding-right: 30px;
   display: block;
 }
 
-
 /*------------------------------------------------------------------------------------------*/
 /*------All products Page -----------------------------------------------------------------*/
-.products {
-  margin: 70px 0;
-}
+
 
 .row-container {
   max-width: 100%;
@@ -213,16 +268,23 @@ header h2 {
   justify-content: flex-start;
   justify-content: space-evenly;
 }
+<<<<<<< HEAD
 .column8 {
   padding:15px;
   flex-basis: 30%;
   min-width: 300px;
+=======
+.column3 {
+  flex-basis: 30%;
+  min-width: 250px;
+>>>>>>> 0993b1502cf9a09b8950f06eb5d0e943a043d694
   margin-bottom: 30px;
   transition: transform 0.5s;
 }
 .column8:hover {
   transform: translateY(-10px);
 }
+<<<<<<< HEAD
 .column8 img {
   height: 300px;
   width: 300px;
@@ -231,14 +293,25 @@ header h2 {
 .column8 h4{
 
 
+=======
+.column3 img {
+  height: 400px;
+  width: 400px;
+}
+.column3 h4 {
+  width: 400px;
+>>>>>>> 0993b1502cf9a09b8950f06eb5d0e943a043d694
 }
 h1 {
   text-align: center;
 }
 .title {
   text-align: center;
-  font-size: 40px;
-  margin: 0px auto 80px;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   line-height: 60px;
   color: #555;
@@ -260,8 +333,7 @@ h4 {
   color: #555;
   font-weight: normal;
 }
-
-.column3 p {
+column3 p {
   font-size: 15px;
 }
 .star {
@@ -344,14 +416,11 @@ input:focus {
   justify-content: flex-start;
 }
 .small-img-col {
-  padding-top:10px;
+  padding-top: 10px;
   flex-basis: 24%;
   cursor: pointer;
-  
-  
 }
 .small-img-col img {
- 
   height: 70px;
   border: 3px solid green;
 }
@@ -483,7 +552,7 @@ form a {
 
 .cartPage {
   display: flex;
-  width:95%;
+  width: 95%;
   margin: auto;
 }
 
@@ -494,7 +563,7 @@ form a {
   width: 400px;
 }
 
-.cartTotal table{
+.cartTotal table {
   width: 90%;
   margin: auto;
   margin-top: 0;
@@ -512,91 +581,88 @@ td {
 }
 
 .Cart table {
- 
   width: 90%;
   margin: auto;
   margin-top: 0;
 }
 
 .cartTitle {
- text-align: center;
+  text-align: center;
 }
 
-.chechoutbtn{
+.chechoutbtn {
   color: rgb(255, 255, 255);
   padding-top: 15px;
   text-align: center;
   margin-left: 15%;
   margin-right: 15%;
   height: 50px;
-  background-color:#59ab6e;
+  background-color: #59ab6e;
   border-radius: 10px;
 }
-.cartTotalTitle{
-
+.chechoutbtn a{
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+.cartTotalTitle {
   text-align: center;
 }
 
-
 /*-------------------About us page-------------------------------*/
-.AboutUs{
-  margin:50px;
+.AboutUs {
+  margin: 50px;
 }
-.map{
-  padding-left: 10%;;
+.map {
+  padding-left: 10%;
 }
 
-.About-container{
+.About-container {
   max-width: 100%;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
-.About-container p{
 
-}
-.desc{
-  margin-right:160px;
+.desc {
+  margin-right: 160px;
   text-align: justify;
-  
 }
-.desc h3{
+.desc h3 {
   text-align: center;
-text-align: justify;
-  
+  text-align: justify;
 }
 .about-logo {
-  width:100%;
- display:flex;
- flex-wrap: wrap;
- gap: 10px 20px;
- margin-left:90px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-left: 90px;
 }
 .about-logo img {
   width: 140px;
-  height:100px;
+  height: 100px;
   margin-left: 17px;
 }
 
 /*--------------------------------------
 
 /************************contact us*****************/
-.contactPage{
-
+.contactPage {
   width: 90%;
 }
-.envelopIcon{
-  filter: invert(66%) sepia(29%) saturate(641%) hue-rotate(83deg) brightness(85%) contrast(87%);
-  padding-left:10%;
-  padding-right:10%;
+.envelopIcon {
+  filter: invert(66%) sepia(29%) saturate(641%) hue-rotate(83deg)
+    brightness(85%) contrast(87%);
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 10px;
   width: 400px;
 }
 
-.enveloppe{
-  width:500px;
+.enveloppe {
+  width: 500px;
 }
-.contactUsTitle{
+.contactUsTitle {
   font: 1em sans-serif;
   padding-top: 75px;
   background-color: #e9eef5;
@@ -604,14 +670,42 @@ text-align: justify;
   color: rgb(0, 0, 0);
 }
 
-.contactUs{
+.contactUs {
   padding-top: 50px;
   flex: 1;
   width: 400px;
 }
 
-.contactCenter{
+.contactCenter {
   margin-left: 15%;
   margin-right: 15%;
-  display:flex;
+  display: flex;
+}
+
+.message {
+  width: 100%;
+  height: 100px;
+}
+
+/*************************************Checkout*********************/
+.checkoutForm {
+  padding: 20PX;
+  margin-left: 10%;
+  width:70%;
+  background-color: rgb(255, 255, 255);
+}
+.checkoutPage {
+  padding-top: 50px;
+  display: flex;
+  background-color: #e9eef5;
+  padding-bottom: 50px;;
+}
+.cardDetails{
+  margin-right: 10%;
+  width: 80%;
+  padding-left:30px;
+  padding-right:30px;
+  padding-top :100px;
+  background-color: rgba(255, 255, 255, 0.808);
+  margin-left: 10%;
 }

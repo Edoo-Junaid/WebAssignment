@@ -22,11 +22,11 @@
             </div>
             <div class="contactUs">
                 <form class="formContactUs" action="Process.php" method="post">
-                    <input type="text" class="formInput" placeholder="First name">
-                    <input type=" text" placeholder="Last name">
-                    <input type="email" placeholder="email">
-                    <input type="text" placeholder="Message">
-                    <input type="submit">
+                    <input type="text" class="formInput" placeholder="First name" name="FirstName">
+                    <input type=" text" placeholder="Last name" name="LastName">
+                    <input type="email" placeholder="email" name="Email">
+                    <textarea class="message" placeholder="Your Message" name="message"> </textarea>
+                    <input type="submit" name="contactUs">
                 </form>
             </div>
         </div>

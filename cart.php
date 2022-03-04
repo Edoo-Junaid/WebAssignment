@@ -16,7 +16,7 @@
 
     <div class="cartPage">
         <div class="Cart">
-            <h2 class="cartTitle">Shopping Cart</h2>
+            <h2 class="title">Shopping Cart</h2>
             <table>
                 <tr>
                     <th>Image</th>

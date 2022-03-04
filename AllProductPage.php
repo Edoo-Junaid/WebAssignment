@@ -18,7 +18,6 @@ $product_shuffle = $product->getData();
     $phoneAccesories = true;
     ?>
     <?php foreach ($product_shuffle as $item) { ?>
-
       <?php if ($item['category'] == "clothing") { ?>
         <?php if ($clothing) {
           echo "<h1 id = 'clothing' class='title'>Clothing</h1>";

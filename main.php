@@ -15,7 +15,7 @@ include("navbar.php");
     <div class="row">
       <div class="column2">
         <br><br><br><br>
-        <p class="title">welcome</p>
+        <p class="title">Welcome</p>
         <h1>Explore & Discover Our Collections !</h1>
         <div class="button1"> <a href="AllProductPage.php">Explore Now &#8594</a></div>
       </div>
@@ -55,7 +55,7 @@ include("navbar.php");
     </div>
   </div>
   <!-------------------------------------On sales--------------------------------------------->
-  <div class="products">
+  <div class="products" id="onSales">
     <div class="row-container">
       <h1 class="title">On Sale 60%OFF</h1>
 
@@ -108,7 +108,7 @@ include("navbar.php");
  <script> 
 var i = 0; 			// Start Point
 var images = [];	// Images Array
-var time = 3000;	// Time Between Switch
+var time = 2000;	// Time Between Switch
 	 
 // Image List
 images[0] = "Images/aquarium-centre-commercial-dubai.webp";

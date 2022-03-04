@@ -77,7 +77,7 @@
                 </tr>
             </table>
             <div class="chechoutbtn">
-                Proceed to checkout
+                <a href="checkoutPage.php" >Proceed to checkout</a>
             </div>
         </div>
     </div>

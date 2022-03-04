@@ -5,16 +5,12 @@ include("navbar.php");
 <?php
 $product_shuffle = $product->getData();
 ?>
-
 <!--------------------------------------------------Products---------------------------------------------->
 <div class="products">
   <div class="row-container">
 
-
- <h1 class="title">OUR PRODUCTS</h1>
-   
-
-   <h1></h1>
+    <h1 class="title">OUR PRODUCTS</h1>
+    <h1></h1>
     <?php
     $clothing = true;
     $shoes = true;
@@ -22,33 +18,33 @@ $product_shuffle = $product->getData();
     $phoneAccesories = true;
     ?>
     <?php foreach ($product_shuffle as $item) { ?>
-    
-      <?php if ($item['sections'] == "clothing") { ?>
+
+      <?php if ($item['category'] == "clothing") { ?>
         <?php if ($clothing) {
-          echo "<h1 class='title'>Clothing</h1>";
+          echo "<h1 id = 'clothing' class='title'>Clothing</h1>";
         ?>
-          <div class="row1">
-          <?php
-          echo "<br>";
-          $clothing = false;
-        }
-          ?>
-          <div class="column3">
-            <a href="<?php printf('%s?ID=%s', 'ProductDetails.php', $item['ID']) ?>">
-              <img src="<?php echo $item['pictures']; ?>">
-              <h4> <?php echo $item['Title']; ?> </h4>
-              <p>MUR <?php echo $item['price']; ?> </p>
-              <p class="star"> <?php echo $item['star']; ?> </p>
-            </a>
-          </div>
+          <div  class="row1">
+            <?php
+            echo "<br>";
+            $clothing = false;
+          }
+            ?>
+            <div class="column3">
+              <a href="<?php printf('%s?ID=%s', 'ProductDetails.php', $item['ID']) ?>">
+                <img src="<?php echo $item['pictures']; ?>">
+                <h4> <?php echo $item['Title']; ?> </h4>
+                <p>MUR <?php echo $item['price']; ?> </p>
+                <p class="star"> <?php echo $item['star']; ?> </p>
+              </a>
+            </div>
+          
         <?php } ?>
         <?php if ($item['sections'] == "shoes") { ?>
           <?php if ($shoes) {
-            echo "<h1 class='title'>Shoes</h1>";
+            echo "<h1 id = 'shoes' class='title'>Shoes</h1>";
           ?>
 
             <div class="row1">
-
             <?php
             echo "<br>";
             $shoes = false;
@@ -65,7 +61,7 @@ $product_shuffle = $product->getData();
           <?php } ?>
           <?php if ($item['sections'] == "watch") { ?>
             <?php if ($watch) {
-              echo "<h1 class='title'>Watch</h1>";
+              echo "<h1 id = 'watch' class='title'>Watch</h1>";
             ?>
               <div class="row1">
               <?php
@@ -84,7 +80,7 @@ $product_shuffle = $product->getData();
             <?php } ?>
             <?php if ($item['sections'] == "Phone Accesories") { ?>
               <?php if ($phoneAccesories) {
-                echo "<h1 class='title'>Phone Accesories</h1>";
+                echo "<h1 id = 'PhoneAccessories' class='title'>Phone Accesories</h1>";
               ?>
                 <div class="row1">
                 <?php
@@ -109,4 +105,3 @@ $product_shuffle = $product->getData();
             <?php
             include("Footer.php");
             ?>
-

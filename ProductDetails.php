@@ -4,7 +4,7 @@ session_start();
 include("navbar.php");
 ?>
 <?php
-$ID = $_GET['ID'] ?? 1;
+$ID = $_GET['ID'] ?? 14;
 foreach ($product->getData() as $item) :
     if ($item['ID'] == $ID) :
 

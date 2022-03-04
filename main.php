@@ -94,12 +94,12 @@ include("navbar.php");
           <img src="Products/Watches/watch2/wt1.png" class="offer-img">
         </div>
         <div class="column4">
-          <p><strong>Exclusively Available on Stylish Boutique</strong></p>
+          <p><h3>Exclusively Available on Stylish Boutique</h3></p>
           <small><strong>get rid bulkiness enjoy lightness</strong></small>
           <h1>Sports Watch</h1>
-          <small><strong>smart watch with 15 features sleepmonitoring Bloodpressure HeartRate step Calories Multiplesports Remotecamera Blood oxygen Incomingcall Informationreminder Longstanby Alarm Musiccontrol FindPhone</strong></small>
+          <small><h3>smart watch with 15 features sleepmonitoring Bloodpressure HeartRate step Calories Multiplesports Remotecamera Blood oxygen Incomingcall Informationreminder Longstanby Alarm Musiccontrol FindPhone<h3></small>
           <br>
-          <a href="" class="button1">Buy Now &#8594;</a>
+          <div class="spbutton"><a href="ProductDetails.php" class="button1">Buy Now &#8594;</a></div>
         </div>
       </div>
     </div>

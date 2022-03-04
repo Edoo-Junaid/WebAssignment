@@ -9,7 +9,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <head>
 
-  <title>Stylish Boutique</title>
+  <title>Stylish Shop</title>
   <link rel="stylesheet" href="style.css" type="text/css">
   <?php
   //require function.php
@@ -20,8 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <body>
 
   <header>
-    <h2> STYLISH BOUTIQUE</h2>
-
+    <h2> STYLISH SHOP</h2>
     <nav>
       <ul class="nav_links">
         <li><a href="main.php">Home</a></li>
@@ -36,15 +35,17 @@ if (session_status() == PHP_SESSION_NONE) {
         </div>
         <li><a href="AboutUs.php">About</a></li>
         <li><a href="contactUs.php">Contact Us</a></li>
-        <li><a href="">Account</a></li>
-
+        <div class=dropdown>
+        <li><a>Account<a></li>
+          <div class=dropdown-content>
+            <li ><a href="Logout.php">Logout</a></li>
+          </div>
+        </div>
       </ul>
     </nav>
     <div class="Icons">
       <a href="cart.php"><img class="cart" src="images/cart.png" alt="logo"></a>
       <img class="user_Icon" src="images/userIcon.png">
-
-
       <?php
       if (isset($_SESSION['username'])) {
         $user = $_SESSION['username'];
@@ -60,6 +61,6 @@ if (session_status() == PHP_SESSION_NONE) {
     function scrollCategory(category) {
       var element = document.getElementById(category);
       element.scrollIntoView();
-
+      
     }
   </script>

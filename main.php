@@ -5,7 +5,7 @@ include("navbar.php");
 <html>
 
 <head>
-  <title>AsosStore</title>
+  <title>Stylish Shop</title>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -16,7 +16,7 @@ include("navbar.php");
       <div class="column2">
         <p class="title">welcome</p>
         <h1>Explore & Discover Our Collections !</h1>
-        <div class="button1"> <a href="">Explore Now &#8594</a></div>
+        <div class="button1"> <a href="AllProductPage.php">Explore Now &#8594</a></div>
       </div>
       <div class="column2"><img src="Images/aquarium-centre-commercial-dubai.webp"> </div>
     </div>
@@ -49,6 +49,7 @@ include("navbar.php");
           <p> MUR 490.00 </p>
           <p class="star">&#9733 &#9733 &#9733 &#9733 &#x2606 </p>
         </div>
+
       </div>
     </div>
   </div>
@@ -104,8 +105,8 @@ include("navbar.php");
 
   </div>
 
-  <?php
-
+  <?php 
+  
   include("Footer.php");
   ?>
 

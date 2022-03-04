@@ -53,3 +53,29 @@ if (isset($_POST["AddToCart"])) {
     header("Location:AllProductPage.php");
     echo $size;
 }
+
+if(isset($_POST["contactUs"])){
+    $firstName = $_POST["FirstName"];
+    $lastName = $_POST["LastName"];
+    $email = $_POST["Email"];
+    $message = $_POST['message'];
+
+    $query="INSERT INTO messages(firstname,lastName,email,message) values ('$firstName','$lastName','$email','$message')";
+    mysqli_query($connection,$query);
+    header("Location:main.php");
+
+}
+
+if(isset($_POST["ShippingDetails"])){
+    session_start();
+    $_SESSION['f']=1;
+    $_SESSION['firstName']=$_POST['firstName'];
+    $_SESSION['lastName']=$_POST['lastName'];
+    $_SESSION['Address']=$_POST['Address'];
+    $_SESSION['phoneNumber']=$_POST['phoneNumber'];
+    $_SESSION['Town']=$_POST['Town'];
+    $_SESSION['state']=$_POST['state'];
+    $_SESSION['zip']=$_POST['zip'];
+    $_SESSION['comments']=$_POST['comments'];
+    header("Location:checkoutPage.php");
+}

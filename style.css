@@ -132,7 +132,7 @@ header h2 {
   margin: 30px;
   border-radius: 30px;
   position: relative;
-  left: 200px;
+  left: 220px;
 }
 .button1 a {
   color: white;
@@ -167,9 +167,13 @@ header h2 {
   background-color:#e9eef5 ;
 }
 .offer {
-  background: radial-gradient(#c299ff, #c299ff);
- 
+  background: radial-gradient( #9999ff, #ccccff);
 }
+.spbutton{
+  position:relative;
+  right:200px;
+}
+
 .column4 {
   flex-basis: 50%;
   min-width: 300px;
@@ -177,7 +181,7 @@ header h2 {
 .column4 img {
   max-width: 70%;
   padding: 50px 0;
-  height: 300px;
+  height: 350px;
 }
 .column4 h1 {
   text-align: left;
@@ -192,31 +196,50 @@ header h2 {
 }
 /*--------footer-----------*---------------------------------------------------------*/
 /*--------footer-----------*---------------------------------------------------------*/
+.footer_container{
+  padding-top: 50px;
+  max-width: 1300px;
+  padding-left: 15px;
+  padding-right: 25px;
+  height:250px;
+}
+
 .footer {
   background: #000;
   color: #8a8a8a;
   font-size: 14px;
-  padding: 60px 0 20px;
+  padding-left:10px;
 }
 .footer p {
   color: #8a8a8a;
 }
 .footer h3 {
   color: #fff;
-  margin-bottom: 20px;
+ 
 }
-
-.footer-col1,
-.footer-col2,
-.footer-col3,
-.footer-col4 {
-  flex-basis: 20%;
+.footer-col1{
+  flex-basis: 25%;
   height: 150px;
-
-  /*min-width: 250px;*/
-  margin-bottom: 20px;
-  text-align: center;
 }
+.footer-col2{
+  flex-basis: 25%;
+  height: 150px;
+}
+
+.footer-col3{
+  flex-basis: 25%;
+  height: 150px;
+}
+.footer-col4 {
+  flex-basis: 15%;
+  height: 150px;
+ 
+}
+.footer-col4 li{
+  padding-right: 150px;
+}
+  /*min-width: 250px;*/
+
 /*
 .footer-col1{
     flex-basis: 30%;
@@ -228,6 +251,17 @@ header h2 {
 .footer-col2 img {
   width: 180px;
   margin-bottom: 20px;
+  height:90px;
+  position: relative;
+  left:50px;
+}
+
+.container{
+  padding-top: 50px;
+  max-width: 1300px;
+  padding-left: 15px;
+  padding-right: 25px;
+  height:250px;
 }
 /*.footer-col3,.footer-col4{
     flex-basis: 12%;
@@ -241,12 +275,18 @@ header h2 {
 
 .app-logo img {
   width: 140px;
-  margin-left: 17px;
+  
 }
 
 .footer li {
-  padding-right: 30px;
+  
   display: block;
+}
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin:  20px 0;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -270,9 +310,10 @@ header h2 {
 }
 
 .column8 {
+  min-width: 300px;
   padding:15px;
   flex-basis: 30%;
-  min-width: 300px;
+
   margin-bottom: 30px;
   transition: transform 0.5s;
 }
@@ -285,10 +326,10 @@ header h2 {
   width: 300px;
 }
 
-.column8 h4{
-
+/*.column8 h4{
 width: 300px;
-}
+}*/
+
 h1 {
   text-align: center;
 }
@@ -320,12 +361,11 @@ h4 {
   color: #555;
   font-weight: normal;
 }
-column3 p {
+/*column3 p {
   font-size: 15px;
-}
+}*/
 .star {
   color: #ff523b;
-
 }
  /*Single product details----------------------------------------------*/
 .small-container1 {

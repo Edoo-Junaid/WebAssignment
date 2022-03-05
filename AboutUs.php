@@ -4,11 +4,11 @@ include("navbar.php");
 ?>
 <div class="AboutUs">
     <div class="About-container">
-        <h1 class="title">ABOUT US</h1>
+       
         <h1 class="title">Who are we</h1>
         <div class="desc">
             <h3>We believe in a world where you have total freedom to be you, without judgement.
-                we do everything we can to help you find your fit, offering our Stylish boutik. Brands in more various sizes – and we're committed to providing all sizes at the same price – so you can be confident we’ve got the perfect thing for you. So, we make sure everyone has an equal chance to discover all the amazing things they’re capable of – no matter who they are, where they’re from or what looks they like to boss. We exist to give you the confidence to be whoever you want to be.
+                we do everything we can to help you find your fit, offering our Stylish Shop. Brands in more various sizes – and we're committed to providing all sizes at the same price – so you can be confident we’ve got the perfect thing for you. So, we make sure everyone has an equal chance to discover all the amazing things they’re capable of – no matter who they are, where they’re from or what looks they like to boss. We exist to give you the confidence to be whoever you want to be.
                 <br>We help brands and sellers connect with many shoppers on Stylish Shop. With 5 years of eCommerce expertise, we’ll be your partner in crafting effective channel, audience, and media strategies. Whether your focus is on broad awareness
             </h3>
         </div>

@@ -31,10 +31,8 @@
                     <li>Instagram</li>
                     <li>YouTube</li>
                 </ul>
-            </div>
-            
+            </div>           
         </div>   
         <hr> 
     </div>
- 
 </div>

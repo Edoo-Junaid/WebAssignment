@@ -63,9 +63,9 @@ $product_shuffle = $product->getData();
               </a>
             </div>
           <?php } ?>
-          <?php if ($item['sections'] == "watch") { ?>
+          <?php if ($item['sections'] == "Watches & Jewelries") { ?>
             <?php if ($watch) {
-              echo "<h1 id = 'watch' class='title'>Watch</h1>";
+              echo "<h1 id = 'Watches & Jewelries' class='title'>Watches & Jewelries</h1>";
             ?>
               <div class="row1">
               <?php
@@ -82,9 +82,9 @@ $product_shuffle = $product->getData();
                 </a>
               </div>
             <?php } ?>
-            <?php if ($item['sections'] == "Phone Accesories") { ?>
+            <?php if ($item['sections'] == "Phones & Accessories") { ?>
               <?php if ($phoneAccesories) {
-                echo "<h1 id = 'PhoneAccessories' class='title'>Phone Accesories</h1>";
+                echo "<h1 id = 'Phones & Accessories' class='title'>Phones & Accessories</h1>";
               ?>
                 <div class="row1">
                 <?php

@@ -66,13 +66,11 @@ foreach ($product->getData() as $item) :
                     <?php $pdResult = explode(',', $item['Item_Details']); ?>
                     <ul>
                         <?php foreach ($pdResult as $r) { ?>
-
                             <div class="listdisplay">
                                 <h3>
                                     <li><?php echo $r; ?></li>
                                 </h3>
                             </div>
-
                         <?php } ?>
                     </ul>
                 </div>

@@ -2,8 +2,8 @@
 
 include("Connection.php");
 include("funtion.php");
+
 if (isset($_POST["register_button"])) {
-    echo "hello";
     $username = $_POST["username"];
     $password = $_POST["password"];
     $email = $_POST["email"];
@@ -22,19 +22,21 @@ if (isset($_POST["login_button"])) {
     session_start();
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $query = "Select * from Users WHERE username='$username' limit 1";
+    $query = "SELECT * FROM Users WHERE username='$username' limit 1";
     $result = mysqli_query($connection, $query);
     if ($result) {
         if ($result && (mysqli_num_rows($result) > 0)) {
             $user_data = mysqli_fetch_assoc($result);
-            if ($user_data['password'] = $password) {
+            if ($user_data['password'] == $password) {
                 $_SESSION['username'] = $username;
                 $_SESSION['userID'] = $user_data['user_id'];
                 header("Location:main.php");
+                die;
             }
         }
     }
-    echo "Wrong username of password";
+    echo "<script> alert('Wrong username or password')</script>";
+    header("Location:LoginPage.php");
 }
 
 if (isset($_POST["AddToCart"])) {
@@ -59,17 +61,19 @@ if (isset($_POST["AddToCart"])) {
             $quantity = $quantity + $product_details['quantity'];
             echo $quantity;
             echo $product_details['quantity'];
-            $queryUpdate = "Update cart SET quantity=$quantity WHERE product_id=$productID AND size='$size'";
+            $queryUpdate = "UPDATE cart SET quantity=$quantity WHERE product_id=$productID AND size='$size'";
             mysqli_query($connection, $queryUpdate);
             header("Location:AllProductPage.php");
         } else {
-            $query1 = "INSERT INTO cart(product_id,user_id,size,quantity,colour) values($productID,$userID,'$size',$quantity,'$colour')";
-            mysqli_query($connection, $query1);
+            $queryUpdate = "INSERT INTO cart(product_id,user_id,size,quantity,colour)
+             values($productID,$userID,'$size',$quantity,'$colour')";
+            mysqli_query($connection, $queryUpdate);
             echo "hello";
            header("Location:AllProductPage.php");
         }
     } else {
-        $query = "INSERT INTO cart(product_id,user_id,size,quantity) values($productID,$userID,'$size',$quantity)";
+        $query = "INSERT INTO cart(product_id,user_id,size,quantity,colour)
+        values($productID,$userID,'$size',$quantity,'$colour')";
         mysqli_query($connection, $query);
         echo "hola";
         header("Location:AllProductPage.php");
@@ -81,8 +85,8 @@ if (isset($_POST["contactUs"])) {
     $lastName = $_POST["LastName"];
     $email = $_POST["Email"];
     $message = $_POST['message'];
-
-    $query = "INSERT INTO messages(firstname,lastName,email,message) values ('$firstName','$lastName','$email','$message')";
+    $query = "INSERT INTO messages(firstname,lastName,email,message) 
+    values ('$firstName','$lastName','$email','$message')";
     mysqli_query($connection, $query);
     header("Location:main.php");
 }
@@ -100,16 +104,13 @@ if (isset($_POST["ShippingDetails"])) {
     $comments = $_SESSION['comments'] = $_POST['comments'];
     $userID = $_SESSION['userID'];
     if (empty($firstName) || empty($lastName) || empty($address) || empty($town) || empty($zip)) {
-        echo "hola";
         header("Location:checkoutPage.php");
     } else {
-        echo "hello";
         $query = "INSERT INTO shippingdetails values ($userID,'$firstName','$lastName','$address',$phoneNumber,'$town','$state',$zip,'$comments')";
         mysqli_query($connection, $query);
         header("Location:checkoutPage.php");
     }
 }
-
 if (isset($_POST['cardDetails'])) {
     session_start();
     $userID = $_SESSION['userID'];

@@ -34,8 +34,6 @@
                 <input class="btn" type="submit" name="ShippingDetails" value="Next   &#x2192;">
             </form>
         </div>
-
-
         <p>
         <div class="cardDetails">
             <h2 class='title'>Payment Details</h2>
@@ -54,7 +52,6 @@
     </div>
     <h2 class="title">Order Sumary</h2>
     <div class="orderSummary">
-        
         <table>
             <tr>
                 <th> Product </th>
@@ -93,7 +90,6 @@
         </table>
         <btn class="btn" id="orderBtn">Place Order</btn>
     </div>
-
 </body>
 
 
@@ -111,7 +107,6 @@
         unset($_SESSION['shippingDetails']);
     }
     ?>
-
     function required(id) {
         var field = document.getElementById(id);
         if (field.value == "") {

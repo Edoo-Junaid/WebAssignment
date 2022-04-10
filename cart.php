@@ -12,7 +12,7 @@
     include("navbar.php");
     include("Connection.php");
     include("funtion.php");
-    if (!check_login()){
+    if (!check_login()) {
         header("Location:LoginPage.php");
     }
     ?>
@@ -49,14 +49,15 @@
                         <td> <?php echo $productData['price']; ?></td>
                         <td> <?php echo $row['quantity']; ?></td>
                         <td> <?php echo $subTotal; ?></td>
-                        <td><a href="<?php printf('%s?deleteCartID=%s', 'Process.php', $row['cart_id']) ?>"><img src="Images/minusLogo.png" width="20px"></td>
+                        <td><a href="<?php printf('%s?deleteCartID=%s', 'Process.php', $row['cart_id']) ?>">
+                                <img src="Images/minusLogo.png" width="20px"></td>
                     </tr>
                 <?php
                 endforeach;
                 ?>
-
             </table>
         </div>
+        
         <div class="cartTotal">
             <h2 class="cartTotalTitle">Cart Totals</h2>
             <table class="cartTotalTable">

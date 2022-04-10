@@ -6,35 +6,36 @@ class DBController
 
     protected $host= 'localhost';
 
-    protected $user='yahya';
-    protected $password='1234';
-    protected $database='ecommerce';
+    protected $user='root';
+    protected $password='';
+    protected $database='stylishboutique';
 
 
     //connecion property
-    public $con=null;
+    public $con = null;
 
     //call constructor
 
     public function __construct()
     {
-        $this->con=mysqli_connect($this->host,$this->user,$this->password,$this->database);
-        if($this->con->connect_error){
+        $this->con = mysqli_connect($this->host, $this->user, $this->password, $this->database);
+        if ($this->con->connect_error) {
 
-            echo"Fail" .$this->con->connect_error;
+            echo "Fail" . $this->con->connect_error;
         }
     }
 
-    public function destruct(){
+    public function destruct()
+    {
         $this->closeConnection;
-
     }
-//Closing connection
+    //Closing connection
 
-protected  function closeConnection(){
-    if($this->con!=null){
-        $this->con->close();
-        $this->null;
+    protected  function closeConnection()
+    {
+        if ($this->con != null) {
+            $this->con->close();
+            $this->null;
+        }
     }
-}
 }

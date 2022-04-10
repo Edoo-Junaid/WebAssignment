@@ -55,12 +55,11 @@ if (session_status() == PHP_SESSION_NONE) {
       }
       ?>
     </div>
-
   </header>
+  
   <script>
     function scrollCategory(category) {
       var element = document.getElementById(category);
       element.scrollIntoView();
-      
     }
   </script>

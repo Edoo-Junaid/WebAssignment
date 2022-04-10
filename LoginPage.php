@@ -23,7 +23,6 @@ include("Connection.php")
     include("Navbar.php");
     ?>
     <div class="account-page">
-
         <div class="form-container">
             <div class="form-btn">
                 <span onclick="login()"> Login</span>
@@ -38,15 +37,12 @@ include("Connection.php")
             </form>
             <form id="RegistrationForm" method="post" action="Process.php">
                 <input class="input " type="text" placeholder=" Username" name="username" />
-
                 <input class="input " type="email" placeholder="Email" name="email" />
                 <input class="input " type="password" placeholder="Password" name="password" />
                 <button type="submit" class="btn" name="register_button">Register</button>
-
             </form>
         </div>
     </div>
-
 
     <?php
     include("Footer.php");
@@ -62,9 +58,7 @@ include("Connection.php")
             RegForm.style.transform = "translateX(0px)"
             LoginForm.style.transform = "translateX(0px)"
             Indicator.style.transform = "translateX(120px)"
-
         }
-
         function login() {
             RegForm.style.transform = "translateX(300px)"
             LoginForm.style.transform = "translateX(300px)"

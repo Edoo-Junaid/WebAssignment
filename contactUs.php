@@ -10,11 +10,9 @@
     <?php
     include("navbar.php")
     ?>
-
     <div class="contactUsTitle">
         <h1>HAVE SOME QUESTIONS?</h1>
     </div>
-
     <div class="contactPage">
         <div class="contactCenter">
             <div class="enveloppe">
@@ -25,12 +23,16 @@
                     <input type="text" class="formInput" placeholder="First name" name="FirstName">
                     <input type=" text" placeholder="Last name" name="LastName">
                     <input type="email" placeholder="email" name="Email">
-                    <textarea class="message" placeholder="Your Message" name="message"> </textarea>
+                    <textarea class="message" name="message" placeholder=" Your Message"></textarea>
                     <input class="btn" type="submit" name="contactUs">
                 </form>
             </div>
         </div>
     </div>
+
+    <?php
+
+    include("footer.php"); ?>
 </body>
 
 </html>
